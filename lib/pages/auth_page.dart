@@ -24,7 +24,7 @@ class _AuthPageState extends State<AuthPage> {
 
     try {
       final response = await http.post(
-        Uri.parse('http://127.0.0.1:8000/register'),
+        Uri.parse('http://188.137.251.110:8000/register'),
         headers: {'Content-Type': 'application/json'},
         body: json.encode({
           'first_name': firstName,
