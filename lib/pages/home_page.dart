@@ -55,11 +55,11 @@ class _HomePageState extends State<HomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Text('MR Darslari', style: TextStyle(color: Color(0xFF3B82F6), fontSize: 24, fontWeight: FontWeight.bold, letterSpacing: 1)),
+                        const Text('MR Darslari', style: TextStyle(color: Color(0xFF00FF41), fontSize: 24, fontWeight: FontWeight.bold, letterSpacing: 1)),
                         const SizedBox(height: 20),
                         const CircleAvatar(
                           radius: 30,
-                          backgroundColor: Color(0xFF3B82F6),
+                          backgroundColor: Color(0xFF00FF41),
                           child: Icon(Icons.person, size: 35, color: Colors.white),
                         ),
                         const SizedBox(height: 10),
@@ -85,9 +85,9 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  gradient: const LinearGradient(colors: [Color(0xFF3B82F6), Color(0xFF6366F1)]),
+                  gradient: const LinearGradient(colors: [Color(0xFF00FF41), Color(0xFF6366F1)]),
                   borderRadius: BorderRadius.circular(16),
-                  boxShadow: [BoxShadow(color: const Color(0xFF3B82F6).withOpacity(0.3), blurRadius: 15, offset: const Offset(0, 5))],
+                  boxShadow: [BoxShadow(color: const Color(0xFF00FF41).withOpacity(0.3), blurRadius: 15, offset: const Offset(0, 5))],
                 ),
                 child: ElevatedButton.icon(
                   onPressed: () {
@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> {
                       width: 50,
                       height: 50,
                       decoration: BoxDecoration(
-                        color: isLocked ? const Color(0xFF27272A) : const Color(0xFF3B82F6).withOpacity(0.1),
+                        color: isLocked ? const Color(0xFF27272A) : const Color(0xFF00FF41).withOpacity(0.1),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       alignment: Alignment.center,
@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
-                          color: isLocked ? const Color(0xFF71717A) : const Color(0xFF3B82F6),
+                          color: isLocked ? const Color(0xFF71717A) : const Color(0xFF00FF41),
                         ),
                       ),
                     ),
@@ -158,7 +158,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     trailing: Icon(
                       isLocked ? Icons.lock_outline : Icons.arrow_forward_ios,
-                      color: isLocked ? const Color(0xFF52525B) : const Color(0xFF3B82F6),
+                      color: isLocked ? const Color(0xFF52525B) : const Color(0xFF00FF41),
                       size: 20,
                     ),
                     onTap: () {

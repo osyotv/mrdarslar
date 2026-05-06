@@ -9,6 +9,10 @@ import 'pages/about_page.dart';
 import 'pages/payment_page.dart';
 import 'pages/leaderboard_page.dart';
 import 'pages/main_wrapper.dart';
+import 'pages/profile_page.dart';
+import 'pages/developer_page.dart';
+import 'pages/admin_panel_page.dart';
+import 'pages/certificate_page.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 
@@ -32,18 +36,18 @@ class MRDarslariApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         scaffoldBackgroundColor: const Color(0xFF09090B), // Zinc-950 (Premium Deep Black)
-        primaryColor: const Color(0xFF3B82F6), // Premium Blue
+        primaryColor: const Color(0xFF00FF41), // Matrix Green
         appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xFF09090B),
           elevation: 0,
           centerTitle: true,
-          titleTextStyle: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w600, letterSpacing: 0.5),
-          iconTheme: IconThemeData(color: Colors.white),
+          titleTextStyle: TextStyle(color: Color(0xFF00FF41), fontSize: 20, fontWeight: FontWeight.bold, letterSpacing: 1.2, fontFamily: 'Courier'),
+          iconTheme: IconThemeData(color: Color(0xFF00FF41)),
         ),
         colorScheme: const ColorScheme.dark(
-          primary: Color(0xFF3B82F6),
-          secondary: Color(0xFF6366F1), // Indigo
-          surface: Color(0xFF18181B), // Zinc-900 (Cards)
+          primary: Color(0xFF00FF41),
+          secondary: Color(0xFF008F11), // Darker Green
+          surface: Color(0xFF111111), // Slightly lighter black
         ),
         fontFamily: 'Roboto', // Modern sans-serif
         elevatedButtonTheme: ElevatedButtonThemeData(
@@ -63,6 +67,10 @@ class MRDarslariApp extends StatelessWidget {
         '/about': (context) => const AboutPage(),
         '/payment': (context) => const PaymentPage(),
         '/leaderboard': (context) => const LeaderboardPage(),
+        '/profile': (context) => const ProfilePage(),
+        '/developer': (context) => const DeveloperPage(),
+        '/admin': (context) => const AdminPanelPage(),
+        '/certificate': (context) => const CertificatePage(),
       },
     );
   }

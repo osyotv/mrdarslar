@@ -71,9 +71,14 @@ class _TestPageState extends State<TestPage> {
     double percentage = (correctAnswers / questions.length) * 100;
     
     // YAKKAXON REJIMDA 70% TOPSHIRILISHI SHART
-    if (percentage >= 70 && currentUnlocked <= widget.level && widget.level < 10) {
-      newUnlocked = widget.level + 1;
-      await prefs.setInt('unlocked_level', newUnlocked);
+    if (percentage >= 70 && currentUnlocked <= widget.level) {
+      if (widget.level < 10) {
+        newUnlocked = widget.level + 1;
+        await prefs.setInt('unlocked_level', newUnlocked);
+      } else {
+        // Level 10 passed! Certificate unlocked.
+        await prefs.setBool('has_certificate', true);
+      }
     }
 
     // Serverga yuborish (Firebase Firestore)
@@ -118,14 +123,24 @@ class _TestPageState extends State<TestPage> {
               Text('${percentage.toInt()}%', style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: passed ? Colors.green : Colors.red)),
               const SizedBox(height: 20),
               Text(
-                passed ? "Ajoyib! Keyingi daraja ochildi." : "Keyingi darajaga o'tish uchun kamida 70% topishingiz shart!",
+                passed 
+                  ? (widget.level == 10 ? "Tabriklaymiz! Siz barcha darslarni tugatib sertifikatga ega bo'ldingiz! 🎉" : "Ajoyib! Keyingi daraja ochildi.") 
+                  : "Keyingi darajaga o'tish uchun kamida 70% topishingiz shart!",
                 textAlign: TextAlign.center,
                 style: const TextStyle(fontSize: 18),
               ),
               const SizedBox(height: 40),
+              if (passed && widget.level == 10)
+                ElevatedButton.icon(
+                  onPressed: () => Navigator.pushNamed(context, '/certificate'),
+                  icon: const Icon(Icons.workspace_premium, color: Colors.black),
+                  style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFFFFD700), foregroundColor: Colors.black, padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15)),
+                  label: const Text('Sertifikatni Olish', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                ),
+              if (passed && widget.level == 10) const SizedBox(height: 15),
               ElevatedButton(
                 onPressed: () => Navigator.pop(context),
-                style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF26D0CE), foregroundColor: Colors.black, padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15)),
+                style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF00FF41), foregroundColor: Colors.black, padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15)),
                 child: const Text('Asosiy Menyu', style: TextStyle(fontSize: 18)),
               )
             ],
