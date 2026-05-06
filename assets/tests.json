@@ -2,275 +2,247 @@
     "level_1": [
         {
             "id": 1,
-            "question": "Ekranga 'Salom' so'zini chiqarish uchun qaysi kod to'g'ri?",
+            "question": "Python'da ekranga xabar chiqarish qanday yoziladi?",
             "options": [
-                "print('Salom')",
-                "print(Salom)",
-                "console.log('Salom')",
-                "echo 'Salom'"
+                "print('Xabar')",
+                "echo('Xabar')",
+                "console.log('Xabar')",
+                "System.out.println('Xabar')"
             ],
-            "answer": "print('Salom')"
+            "answer": "print('Xabar')"
         },
         {
             "id": 2,
-            "question": "Foydalanuvchidan ismini so'rash uchun nima ishlatiladi?",
+            "question": "Foydalanuvchidan ma'lumot kiritishni so'rash uchun qaysi funksiya ishlatiladi?",
             "options": [
-                "print('Ism: ')",
-                "input('Ismingiz: ')",
-                "get('Ism: ')",
-                "scan('Ismingiz: ')"
+                "input()",
+                "get()",
+                "scan()",
+                "read()"
             ],
-            "answer": "input('Ismingiz: ')"
+            "answer": "input()"
         },
         {
             "id": 3,
-            "question": "Quyidagilardan qaysi biri o'zgaruvchi nomini to'g'ri e'lon qilish?",
+            "question": "Qaysi belgi Python'da izoh (comment) qoldirish uchun ishlatiladi?",
             "options": [
-                "var my_var = 10",
-                "my_var = 10",
-                "1_var = 10",
-                "my-var = 10"
+                "#",
+                "//",
+                "/*",
+                "<!--"
             ],
-            "answer": "my_var = 10"
+            "answer": "#"
         },
         {
             "id": 4,
-            "question": "Qaysi belgi Python'da izoh (comment) qoldirish uchun ishlatiladi?",
+            "question": "O'zgaruvchi nomini to'g'ri e'lon qilishni toping:",
             "options": [
-                "<!--",
-                "//",
-                "/*",
-                "#"
+                "my_var = 10",
+                "1_var = 10",
+                "my-var = 10",
+                "var my_var = 10"
             ],
-            "answer": "#"
+            "answer": "my_var = 10"
         },
         {
             "id": 5,
             "question": "Python qanday turdagi dasturlash tili?",
             "options": [
+                "Yuqori darajali, interpretatsiya qilinadigan",
                 "Quyi darajali, kompilyatsiya qilinadigan",
                 "Mashina tili",
-                "Yuqori darajali, interpretatsiya qilinadigan",
-                "Faqat veb uchun"
+                "Faqat veb dizayn uchun"
             ],
             "answer": "Yuqori darajali, interpretatsiya qilinadigan"
         },
         {
             "id": 6,
-            "question": "Ekranga 'Salom' so'zini chiqarish uchun qaysi kod to'g'ri?",
+            "question": "Butun sonlar qaysi ma'lumot turiga kiradi?",
             "options": [
-                "print('Salom')",
-                "print(Salom)",
-                "console.log('Salom')",
-                "echo 'Salom'"
+                "int",
+                "float",
+                "str",
+                "bool"
             ],
-            "answer": "print('Salom')"
+            "answer": "int"
         },
         {
             "id": 7,
-            "question": "Foydalanuvchidan ismini so'rash uchun nima ishlatiladi?",
+            "question": "Haqiqiy (kasr) sonlar qaysi ma'lumot turiga kiradi?",
             "options": [
-                "print('Ism: ')",
-                "input('Ismingiz: ')",
-                "get('Ism: ')",
-                "scan('Ismingiz: ')"
+                "float",
+                "int",
+                "complex",
+                "double"
             ],
-            "answer": "input('Ismingiz: ')"
+            "answer": "float"
         },
         {
             "id": 8,
-            "question": "Quyidagilardan qaysi biri o'zgaruvchi nomini to'g'ri e'lon qilish?",
+            "question": "Matnli ma'lumotlar qanday turga kiradi?",
             "options": [
-                "var my_var = 10",
-                "my_var = 10",
-                "1_var = 10",
-                "my-var = 10"
+                "str",
+                "char",
+                "text",
+                "string"
             ],
-            "answer": "my_var = 10"
+            "answer": "str"
         },
         {
             "id": 9,
-            "question": "Qaysi belgi Python'da izoh (comment) qoldirish uchun ishlatiladi?",
+            "question": "Python'da 'True' (Rost) va 'False' (Yolg'on) qiymatlari qaysi turga tegishli?",
             "options": [
-                "<!--",
-                "//",
-                "/*",
-                "#"
+                "bool",
+                "int",
+                "logic",
+                "binary"
             ],
-            "answer": "#"
+            "answer": "bool"
         },
         {
             "id": 10,
-            "question": "Python qanday turdagi dasturlash tili?",
+            "question": "type() funksiyasining vazifasi nima?",
             "options": [
-                "Quyi darajali, kompilyatsiya qilinadigan",
-                "Mashina tili",
-                "Yuqori darajali, interpretatsiya qilinadigan",
-                "Faqat veb uchun"
+                "O'zgaruvchining turini aniqlash",
+                "Ekranga chiqarish",
+                "Matn kiritish",
+                "Dasturni to'xtatish"
             ],
-            "answer": "Yuqori darajali, interpretatsiya qilinadigan"
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ny = 94\nprint(y)",
-            "ans": "94",
-            "opts": [
-                "94",
-                "'y'",
-                "95",
-                "Xatolik"
-            ],
-            "id": 11,
-            "options": [
-                "'y'",
-                "95",
-                "94",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nnum = 77\nprint(num)",
-            "ans": "77",
-            "opts": [
-                "77",
-                "'num'",
-                "78",
-                "Xatolik"
-            ],
-            "id": 12,
-            "options": [
-                "Xatolik",
-                "'num'",
-                "77",
-                "78"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nx = 92\nprint(x)",
-            "ans": "92",
-            "opts": [
-                "92",
-                "'x'",
-                "93",
-                "Xatolik"
-            ],
-            "id": 13,
-            "options": [
-                "Xatolik",
-                "92",
-                "'x'",
-                "93"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nnum = 79\nprint(num)",
-            "ans": "79",
-            "opts": [
-                "79",
-                "'num'",
-                "80",
-                "Xatolik"
-            ],
-            "id": 14,
-            "options": [
-                "'num'",
-                "79",
-                "80",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ny = 89\nprint(y)",
-            "ans": "89",
-            "opts": [
-                "89",
-                "'y'",
-                "90",
-                "Xatolik"
-            ],
-            "id": 15,
-            "options": [
-                "'y'",
-                "89",
-                "90",
-                "Xatolik"
-            ]
+            "answer": "O'zgaruvchining turini aniqlash"
         }
     ],
     "level_2": [
         {
-            "id": 16,
-            "question": "Ro'yxat (List) qaysi qavslar yordamida yoziladi?",
+            "id": 11,
+            "question": "Quyidagi kodning natijasi nima bo'ladi? print(5 // 2)",
             "options": [
-                "<>",
-                "{}",
-                "()",
-                "[]"
+                "2",
+                "2.5",
+                "3",
+                "1"
             ],
-            "answer": "[]"
+            "answer": "2"
+        },
+        {
+            "id": 12,
+            "question": "Quyidagi kodning natijasi nima bo'ladi? print(5 % 2)",
+            "options": [
+                "1",
+                "2.5",
+                "2",
+                "0"
+            ],
+            "answer": "1"
+        },
+        {
+            "id": 13,
+            "question": "Python'da darajaga ko'tarish amali qaysi belgi bilan yoziladi?",
+            "options": [
+                "**",
+                "^",
+                "//",
+                "%%"
+            ],
+            "answer": "**"
+        },
+        {
+            "id": 14,
+            "question": "Qaysi shart operatori qiymatlar tengligini tekshiradi?",
+            "options": [
+                "==",
+                "=",
+                "===",
+                "=>"
+            ],
+            "answer": "=="
+        },
+        {
+            "id": 15,
+            "question": "Qaysi operator 'Teng emas' ni bildiradi?",
+            "options": [
+                "!=",
+                "<>",
+                "not=",
+                "!=="
+            ],
+            "answer": "!="
+        },
+        {
+            "id": 16,
+            "question": "Matnlarni qo'shish (konkatenatsiya) uchun qaysi belgi ishlatiladi?",
+            "options": [
+                "+",
+                "&",
+                ".",
+                ","
+            ],
+            "answer": "+"
         },
         {
             "id": 17,
-            "question": "Tuple va List o'rtasidagi asosiy farq nima?",
+            "question": "len('Python') kodining natijasi nima?",
             "options": [
-                "List o'zgarmas",
-                "Tuple tezroq ishlamaydi",
-                "Tuple faqat sonlar oladi",
-                "Tuple o'zgarmas (immutable)"
+                "6",
+                "5",
+                "7",
+                "Xatolik"
             ],
-            "answer": "Tuple o'zgarmas (immutable)"
+            "answer": "6"
         },
         {
             "id": 18,
-            "question": "Ro'yxatning oxiriga element qo'shish uchun qaysi metod ishlatiladi?",
+            "question": "'Python'.upper() qanday natija beradi?",
             "options": [
-                "append()",
-                "insert()",
-                "add()",
-                "push()"
+                "'PYTHON'",
+                "'python'",
+                "'Python'",
+                "Xatolik"
             ],
-            "answer": "append()"
+            "answer": "'PYTHON'"
         },
         {
             "id": 19,
-            "question": "Set (To'plam) da bir xil elementlar necha marta bo'lishi mumkin?",
+            "question": "'PYTHON'.lower() qanday natija beradi?",
             "options": [
-                "Faqat bir marta (takrorlanmaydi)",
-                "Ikki marta",
-                "Umuman element qo'shib bo'lmaydi",
-                "Istalgancha"
+                "'python'",
+                "'PYTHON'",
+                "'Python'",
+                "Xatolik"
             ],
-            "answer": "Faqat bir marta (takrorlanmaydi)"
+            "answer": "'python'"
         },
         {
             "id": 20,
-            "question": "Quyidagi kod natijasi nima? len([1, 2, 3])",
+            "question": "Qaysi metod matnning boshidagi va oxiridagi bo'shliqlarni olib tashlaydi?",
             "options": [
-                "1",
-                "2",
-                "3",
-                "4"
+                "strip()",
+                "trim()",
+                "clear()",
+                "remove()"
             ],
-            "answer": "3"
-        },
+            "answer": "strip()"
+        }
+    ],
+    "level_3": [
         {
             "id": 21,
             "question": "Ro'yxat (List) qaysi qavslar yordamida yoziladi?",
             "options": [
-                "<>",
-                "{}",
+                "[]",
                 "()",
-                "[]"
+                "{}",
+                "<>"
             ],
             "answer": "[]"
         },
         {
             "id": 22,
-            "question": "Tuple va List o'rtasidagi asosiy farq nima?",
+            "question": "Tuple (Kortej) va List o'rtasidagi asosiy farq nima?",
             "options": [
+                "Tuple o'zgarmas (immutable)",
                 "List o'zgarmas",
-                "Tuple tezroq ishlamaydi",
                 "Tuple faqat sonlar oladi",
-                "Tuple o'zgarmas (immutable)"
+                "List tezroq ishlaydi"
             ],
             "answer": "Tuple o'zgarmas (immutable)"
         },
@@ -279,5519 +251,872 @@
             "question": "Ro'yxatning oxiriga element qo'shish uchun qaysi metod ishlatiladi?",
             "options": [
                 "append()",
-                "insert()",
                 "add()",
+                "insert()",
                 "push()"
             ],
             "answer": "append()"
         },
         {
             "id": 24,
-            "question": "Set (To'plam) da bir xil elementlar necha marta bo'lishi mumkin?",
+            "question": "Ro'yxatdan oxirgi elementni o'chirib, uni qaytaruvchi metod qaysi?",
             "options": [
-                "Faqat bir marta (takrorlanmaydi)",
-                "Ikki marta",
-                "Umuman element qo'shib bo'lmaydi",
-                "Istalgancha"
+                "pop()",
+                "remove()",
+                "delete()",
+                "clear()"
             ],
-            "answer": "Faqat bir marta (takrorlanmaydi)"
+            "answer": "pop()"
         },
         {
             "id": 25,
-            "question": "Quyidagi kod natijasi nima? len([1, 2, 3])",
+            "question": "Ro'yxatning ma'lum bir indeksiga element qo'shish uchun qaysi metod ishlatiladi?",
             "options": [
-                "1",
-                "2",
+                "insert()",
+                "append()",
+                "add()",
+                "put()"
+            ],
+            "answer": "insert()"
+        },
+        {
+            "id": 26,
+            "question": "Set (To'plam) da bir xil elementlar necha marta bo'lishi mumkin?",
+            "options": [
+                "Faqat bir marta",
+                "Ikki marta",
+                "Istalgancha",
+                "Umuman qo'shib bo'lmaydi"
+            ],
+            "answer": "Faqat bir marta"
+        },
+        {
+            "id": 27,
+            "question": "Quyidagi kod natijasi nima? len([10, 20, 30])",
+            "options": [
                 "3",
-                "4"
+                "10",
+                "30",
+                "2"
             ],
             "answer": "3"
         },
         {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nnum = 33\nprint(num)",
-            "ans": "33",
-            "opts": [
-                "33",
-                "'num'",
-                "34",
-                "Xatolik"
-            ],
-            "id": 26,
-            "options": [
-                "33",
-                "'num'",
-                "Xatolik",
-                "34"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nnum = 80\nprint(num)",
-            "ans": "80",
-            "opts": [
-                "80",
-                "'num'",
-                "81",
-                "Xatolik"
-            ],
-            "id": 27,
-            "options": [
-                "80",
-                "'num'",
-                "Xatolik",
-                "81"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ncount = 53\nprint(count)",
-            "ans": "53",
-            "opts": [
-                "53",
-                "'count'",
-                "54",
-                "Xatolik"
-            ],
             "id": 28,
+            "question": "my_list = [1, 2, 3] bo'lsa, my_list[1] ning qiymati nima?",
             "options": [
-                "54",
-                "'count'",
-                "Xatolik",
-                "53"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ncount = 60\nprint(count)",
-            "ans": "60",
-            "opts": [
-                "60",
-                "'count'",
-                "61",
+                "2",
+                "1",
+                "3",
                 "Xatolik"
             ],
+            "answer": "2"
+        },
+        {
             "id": 29,
+            "question": "Ro'yxatdagi elementlarni tartiblash uchun qaysi metod ishlatiladi?",
             "options": [
-                "61",
-                "60",
-                "'count'",
-                "Xatolik"
-            ]
+                "sort()",
+                "order()",
+                "arrange()",
+                "reverse()"
+            ],
+            "answer": "sort()"
         },
         {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ny = 17\nprint(y)",
-            "ans": "17",
-            "opts": [
-                "17",
-                "'y'",
-                "18",
-                "Xatolik"
-            ],
             "id": 30,
+            "question": "Tuple (Kortej) yaratish uchun qaysi qavslar ishlatiladi?",
             "options": [
-                "'y'",
-                "17",
-                "18",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nx = 33\nprint(x)",
-            "ans": "33",
-            "opts": [
-                "33",
-                "'x'",
-                "34",
-                "Xatolik"
-            ],
-            "id": 31,
-            "options": [
-                "33",
-                "Xatolik",
-                "'x'",
-                "34"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nnum = 55\nprint(num)",
-            "ans": "55",
-            "opts": [
-                "55",
-                "'num'",
-                "56",
-                "Xatolik"
-            ],
-            "id": 32,
-            "options": [
-                "Xatolik",
-                "'num'",
-                "55",
-                "56"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nx = 70\nprint(x)",
-            "ans": "70",
-            "opts": [
-                "70",
-                "'x'",
-                "71",
-                "Xatolik"
-            ],
-            "id": 33,
-            "options": [
-                "70",
-                "Xatolik",
-                "71",
-                "'x'"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nx = 53\nprint(x)",
-            "ans": "53",
-            "opts": [
-                "53",
-                "'x'",
-                "54",
-                "Xatolik"
-            ],
-            "id": 34,
-            "options": [
-                "Xatolik",
-                "54",
-                "'x'",
-                "53"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ny = 92\nprint(y)",
-            "ans": "92",
-            "opts": [
-                "92",
-                "'y'",
-                "93",
-                "Xatolik"
-            ],
-            "id": 35,
-            "options": [
-                "'y'",
-                "92",
-                "Xatolik",
-                "93"
-            ]
-        }
-    ],
-    "level_3": [
-        {
-            "id": 36,
-            "question": "Lug'at (Dictionary) qanday qavs bilan yaratiladi?",
-            "options": [
-                "<>",
-                "{}",
                 "()",
-                "[]"
-            ],
-            "answer": "{}"
-        },
-        {
-            "id": 37,
-            "question": "Shart operatorini to'g'ri ko'rsating:",
-            "options": [
-                "if x > 5:",
-                "when x > 5:",
-                "if x > 5 then",
-                "if (x > 5)"
-            ],
-            "answer": "if x > 5:"
-        },
-        {
-            "id": 38,
-            "question": "'elif' nima uchun ishlatiladi?",
-            "options": [
-                "Siklni to'xtatish uchun",
-                "Xatolikni ushlash uchun",
-                "Faqat lug'atlarda ishlatiladi",
-                "Qo'shimcha shart tekshirish uchun"
-            ],
-            "answer": "Qo'shimcha shart tekshirish uchun"
-        },
-        {
-            "id": 39,
-            "question": "Lug'atdagi barcha kalitlarni olish uchun qaysi metod ishlatiladi?",
-            "options": [
-                "values()",
-                "get()",
-                "items()",
-                "keys()"
-            ],
-            "answer": "keys()"
-        },
-        {
-            "id": 40,
-            "question": "Python'da 'True' qanday yoziladi?",
-            "options": [
-                "1",
-                "Kichik harf bilan: true",
-                "Katta harf bilan: True",
-                "TRUE"
-            ],
-            "answer": "Katta harf bilan: True"
-        },
-        {
-            "id": 41,
-            "question": "Lug'at (Dictionary) qanday qavs bilan yaratiladi?",
-            "options": [
-                "<>",
+                "[]",
                 "{}",
-                "()",
-                "[]"
+                "<>"
             ],
-            "answer": "{}"
-        },
-        {
-            "id": 42,
-            "question": "Shart operatorini to'g'ri ko'rsating:",
-            "options": [
-                "if x > 5:",
-                "when x > 5:",
-                "if x > 5 then",
-                "if (x > 5)"
-            ],
-            "answer": "if x > 5:"
-        },
-        {
-            "id": 43,
-            "question": "'elif' nima uchun ishlatiladi?",
-            "options": [
-                "Siklni to'xtatish uchun",
-                "Xatolikni ushlash uchun",
-                "Faqat lug'atlarda ishlatiladi",
-                "Qo'shimcha shart tekshirish uchun"
-            ],
-            "answer": "Qo'shimcha shart tekshirish uchun"
-        },
-        {
-            "id": 44,
-            "question": "Lug'atdagi barcha kalitlarni olish uchun qaysi metod ishlatiladi?",
-            "options": [
-                "values()",
-                "get()",
-                "items()",
-                "keys()"
-            ],
-            "answer": "keys()"
-        },
-        {
-            "id": 45,
-            "question": "Python'da 'True' qanday yoziladi?",
-            "options": [
-                "1",
-                "Kichik harf bilan: true",
-                "Katta harf bilan: True",
-                "TRUE"
-            ],
-            "answer": "Katta harf bilan: True"
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ny = 10\nprint(y)",
-            "ans": "10",
-            "opts": [
-                "10",
-                "'y'",
-                "11",
-                "Xatolik"
-            ],
-            "id": 46,
-            "options": [
-                "10",
-                "'y'",
-                "11",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nx = 61\nprint(x)",
-            "ans": "61",
-            "opts": [
-                "61",
-                "'x'",
-                "62",
-                "Xatolik"
-            ],
-            "id": 47,
-            "options": [
-                "61",
-                "Xatolik",
-                "62",
-                "'x'"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ny = 63\nprint(y)",
-            "ans": "63",
-            "opts": [
-                "63",
-                "'y'",
-                "64",
-                "Xatolik"
-            ],
-            "id": 48,
-            "options": [
-                "'y'",
-                "63",
-                "64",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nnum = 20\nprint(num)",
-            "ans": "20",
-            "opts": [
-                "20",
-                "'num'",
-                "21",
-                "Xatolik"
-            ],
-            "id": 49,
-            "options": [
-                "'num'",
-                "20",
-                "21",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ny = 61\nprint(y)",
-            "ans": "61",
-            "opts": [
-                "61",
-                "'y'",
-                "62",
-                "Xatolik"
-            ],
-            "id": 50,
-            "options": [
-                "61",
-                "'y'",
-                "62",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ncount = 27\nprint(count)",
-            "ans": "27",
-            "opts": [
-                "27",
-                "'count'",
-                "28",
-                "Xatolik"
-            ],
-            "id": 51,
-            "options": [
-                "27",
-                "'count'",
-                "Xatolik",
-                "28"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ncount = 45\nprint(count)",
-            "ans": "45",
-            "opts": [
-                "45",
-                "'count'",
-                "46",
-                "Xatolik"
-            ],
-            "id": 52,
-            "options": [
-                "45",
-                "'count'",
-                "Xatolik",
-                "46"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nnum = 95\nprint(num)",
-            "ans": "95",
-            "opts": [
-                "95",
-                "'num'",
-                "96",
-                "Xatolik"
-            ],
-            "id": 53,
-            "options": [
-                "Xatolik",
-                "'num'",
-                "95",
-                "96"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ny = 20\nprint(y)",
-            "ans": "20",
-            "opts": [
-                "20",
-                "'y'",
-                "21",
-                "Xatolik"
-            ],
-            "id": 54,
-            "options": [
-                "'y'",
-                "20",
-                "21",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ncount = 34\nprint(count)",
-            "ans": "34",
-            "opts": [
-                "34",
-                "'count'",
-                "35",
-                "Xatolik"
-            ],
-            "id": 55,
-            "options": [
-                "35",
-                "'count'",
-                "Xatolik",
-                "34"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nx = 66\nprint(x)",
-            "ans": "66",
-            "opts": [
-                "66",
-                "'x'",
-                "67",
-                "Xatolik"
-            ],
-            "id": 56,
-            "options": [
-                "Xatolik",
-                "66",
-                "67",
-                "'x'"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ncount = 68\nprint(count)",
-            "ans": "68",
-            "opts": [
-                "68",
-                "'count'",
-                "69",
-                "Xatolik"
-            ],
-            "id": 57,
-            "options": [
-                "68",
-                "'count'",
-                "Xatolik",
-                "69"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ncount = 24\nprint(count)",
-            "ans": "24",
-            "opts": [
-                "24",
-                "'count'",
-                "25",
-                "Xatolik"
-            ],
-            "id": 58,
-            "options": [
-                "25",
-                "'count'",
-                "24",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\ny = 21\nprint(y)",
-            "ans": "21",
-            "opts": [
-                "21",
-                "'y'",
-                "22",
-                "Xatolik"
-            ],
-            "id": 59,
-            "options": [
-                "'y'",
-                "21",
-                "Xatolik",
-                "22"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kod ishlasa ekranga nima chiqadi?\n\nnum = 90\nprint(num)",
-            "ans": "90",
-            "opts": [
-                "90",
-                "'num'",
-                "91",
-                "Xatolik"
-            ],
-            "id": 60,
-            "options": [
-                "'num'",
-                "90",
-                "91",
-                "Xatolik"
-            ]
+            "answer": "()"
         }
     ],
     "level_4": [
         {
-            "id": 61,
-            "question": "Belgilangan marta takrorlash uchun qaysi sikl qulayroq?",
+            "id": 31,
+            "question": "Lug'at (Dictionary) qanday qavs bilan yaratiladi?",
             "options": [
-                "do-while",
-                "while",
-                "for",
-                "if"
+                "{}",
+                "[]",
+                "()",
+                "<>"
             ],
-            "answer": "for"
+            "answer": "{}"
         },
         {
-            "id": 62,
-            "question": "Siklni to'xtatish uchun qaysi so'z ishlatiladi?",
+            "id": 32,
+            "question": "Lug'atda ma'lumotlar qanday shaklda saqlanadi?",
             "options": [
-                "continue",
-                "stop",
-                "exit",
-                "break"
+                "Kalit-Qiymat (Key-Value)",
+                "Indeksli",
+                "Faqat raqamli",
+                "Tasodifiy"
             ],
-            "answer": "break"
+            "answer": "Kalit-Qiymat (Key-Value)"
         },
         {
-            "id": 63,
-            "question": "Sikldagi qadamni o'tkazib yuborish uchun so'z?",
+            "id": 33,
+            "question": "Lug'atdan barcha kalitlarni olish uchun qaysi metod ishlatiladi?",
             "options": [
-                "continue",
-                "pass",
-                "skip",
-                "next"
+                "keys()",
+                "values()",
+                "items()",
+                "get()"
             ],
-            "answer": "continue"
+            "answer": "keys()"
         },
         {
-            "id": 64,
-            "question": "range(5) funksiyasi qanday sonlar ketma-ketligini beradi?",
+            "id": 34,
+            "question": "Lug'atdan barcha qiymatlarni olish uchun qaysi metod ishlatiladi?",
             "options": [
-                "0, 1, 2, 3, 4, 5",
-                "5, 4, 3, 2, 1",
-                "1, 2, 3, 4, 5",
-                "0, 1, 2, 3, 4"
+                "values()",
+                "keys()",
+                "items()",
+                "get()"
             ],
-            "answer": "0, 1, 2, 3, 4"
+            "answer": "values()"
         },
         {
-            "id": 65,
-            "question": "Cheksiz sikl yaratish uchun nima yoziladi?",
+            "id": 35,
+            "question": "Shart operatori boshlanishini to'g'ri ko'rsating:",
             "options": [
-                "for ever:",
-                "do while:",
-                "while True:",
-                "while 1 == 2:"
+                "if x > 5:",
+                "when x > 5:",
+                "if (x > 5)",
+                "if x > 5 then"
             ],
-            "answer": "while True:"
+            "answer": "if x > 5:"
         },
         {
-            "id": 66,
-            "question": "Belgilangan marta takrorlash uchun qaysi sikl qulayroq?",
+            "id": 36,
+            "question": "'elif' nima uchun ishlatiladi?",
             "options": [
-                "do-while",
-                "while",
-                "for",
-                "if"
+                "Qo'shimcha shart tekshirish uchun",
+                "Siklni to'xtatish uchun",
+                "Xatolikni ushlash uchun",
+                "Hech qanday ma'noga ega emas"
             ],
-            "answer": "for"
+            "answer": "Qo'shimcha shart tekshirish uchun"
         },
         {
-            "id": 67,
-            "question": "Siklni to'xtatish uchun qaysi so'z ishlatiladi?",
+            "id": 37,
+            "question": "'else' bloki qachon ishga tushadi?",
             "options": [
-                "continue",
-                "stop",
-                "exit",
-                "break"
+                "Barcha 'if' va 'elif' shartlari False bo'lganda",
+                "Har doim",
+                "Dastur boshida",
+                "Xatolik bo'lganda"
             ],
-            "answer": "break"
+            "answer": "Barcha 'if' va 'elif' shartlari False bo'lganda"
         },
         {
-            "id": 68,
-            "question": "Sikldagi qadamni o'tkazib yuborish uchun so'z?",
+            "id": 38,
+            "question": "Mantiqiy 'VA' (AND) amali Python'da qanday yoziladi?",
             "options": [
-                "continue",
-                "pass",
-                "skip",
-                "next"
+                "and",
+                "&&",
+                "&",
+                "AND"
             ],
-            "answer": "continue"
+            "answer": "and"
         },
         {
-            "id": 69,
-            "question": "range(5) funksiyasi qanday sonlar ketma-ketligini beradi?",
+            "id": 39,
+            "question": "Mantiqiy 'YOKI' (OR) amali Python'da qanday yoziladi?",
             "options": [
-                "0, 1, 2, 3, 4, 5",
-                "5, 4, 3, 2, 1",
-                "1, 2, 3, 4, 5",
-                "0, 1, 2, 3, 4"
+                "or",
+                "||",
+                "|",
+                "OR"
             ],
-            "answer": "0, 1, 2, 3, 4"
+            "answer": "or"
         },
         {
-            "id": 70,
-            "question": "Cheksiz sikl yaratish uchun nima yoziladi?",
+            "id": 40,
+            "question": "Mantiqiy 'INKOR' (NOT) amali Python'da qanday yoziladi?",
             "options": [
-                "for ever:",
-                "do while:",
-                "while True:",
-                "while 1 == 2:"
+                "not",
+                "!",
+                "~",
+                "NOT"
             ],
-            "answer": "while True:"
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 4, 2]\nprint(sum(nums))",
-            "ans": "11",
-            "opts": [
-                "11",
-                "12",
-                "3",
-                "TypeError"
-            ],
-            "id": 71,
-            "options": [
-                "3",
-                "TypeError",
-                "11",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 2, 2]\nprint(sum(nums))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "7",
-                "3",
-                "TypeError"
-            ],
-            "id": 72,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "6"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [1, 5, 5]\nprint(sum(nums))",
-            "ans": "11",
-            "opts": [
-                "11",
-                "12",
-                "3",
-                "TypeError"
-            ],
-            "id": 73,
-            "options": [
-                "3",
-                "TypeError",
-                "11",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [1, 3, 1]\nprint(sum(nums))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "6",
-                "3",
-                "TypeError"
-            ],
-            "id": 74,
-            "options": [
-                "3",
-                "5",
-                "TypeError",
-                "6"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 4, 3]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 75,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 1, 2]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 76,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 5, 4]\nprint(sum(nums))",
-            "ans": "11",
-            "opts": [
-                "11",
-                "12",
-                "3",
-                "TypeError"
-            ],
-            "id": 77,
-            "options": [
-                "3",
-                "TypeError",
-                "11",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 4, 5]\nprint(sum(nums))",
-            "ans": "12",
-            "opts": [
-                "12",
-                "13",
-                "3",
-                "TypeError"
-            ],
-            "id": 78,
-            "options": [
-                "13",
-                "3",
-                "TypeError",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 3, 1]\nprint(sum(nums))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "7",
-                "3",
-                "TypeError"
-            ],
-            "id": 79,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "6"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 4, 4]\nprint(sum(nums))",
-            "ans": "13",
-            "opts": [
-                "13",
-                "14",
-                "3",
-                "TypeError"
-            ],
-            "id": 80,
-            "options": [
-                "3",
-                "14",
-                "TypeError",
-                "13"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 4, 2]\nprint(sum(nums))",
-            "ans": "11",
-            "opts": [
-                "11",
-                "12",
-                "3",
-                "TypeError"
-            ],
-            "id": 81,
-            "options": [
-                "3",
-                "TypeError",
-                "11",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 4, 4]\nprint(sum(nums))",
-            "ans": "13",
-            "opts": [
-                "13",
-                "14",
-                "3",
-                "TypeError"
-            ],
-            "id": 82,
-            "options": [
-                "3",
-                "14",
-                "TypeError",
-                "13"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [1, 2, 4]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 83,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 5, 1]\nprint(sum(nums))",
-            "ans": "9",
-            "opts": [
-                "9",
-                "10",
-                "3",
-                "TypeError"
-            ],
-            "id": 84,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 2, 2]\nprint(sum(nums))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "7",
-                "3",
-                "TypeError"
-            ],
-            "id": 85,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "6"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 5, 1]\nprint(sum(nums))",
-            "ans": "11",
-            "opts": [
-                "11",
-                "12",
-                "3",
-                "TypeError"
-            ],
-            "id": 86,
-            "options": [
-                "3",
-                "TypeError",
-                "11",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 1, 5]\nprint(sum(nums))",
-            "ans": "9",
-            "opts": [
-                "9",
-                "10",
-                "3",
-                "TypeError"
-            ],
-            "id": 87,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 5, 4]\nprint(sum(nums))",
-            "ans": "13",
-            "opts": [
-                "13",
-                "14",
-                "3",
-                "TypeError"
-            ],
-            "id": 88,
-            "options": [
-                "3",
-                "14",
-                "TypeError",
-                "13"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 3, 3]\nprint(sum(nums))",
-            "ans": "9",
-            "opts": [
-                "9",
-                "10",
-                "3",
-                "TypeError"
-            ],
-            "id": 89,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 5, 4]\nprint(sum(nums))",
-            "ans": "12",
-            "opts": [
-                "12",
-                "13",
-                "3",
-                "TypeError"
-            ],
-            "id": 90,
-            "options": [
-                "13",
-                "3",
-                "TypeError",
-                "12"
-            ]
+            "answer": "not"
         }
     ],
     "level_5": [
         {
-            "id": 91,
-            "question": "Funksiya qanday yaratiladi?",
+            "id": 41,
+            "question": "Qaysi sikl operatori ma'lumotlar to'plami (masalan, ro'yxat) bo'ylab yurish uchun eng qulay?",
             "options": [
-                "def funksiya_nomi():",
-                "func funksiya_nomi:",
-                "create funksiya_nomi():",
-                "function funksiya_nomi()"
+                "for",
+                "while",
+                "do-while",
+                "loop"
             ],
-            "answer": "def funksiya_nomi():"
+            "answer": "for"
         },
         {
-            "id": 92,
-            "question": "Funksiyadan qiymat qaytarish uchun qaysi kalit so'z ishlatiladi?",
+            "id": 42,
+            "question": "Siklni muddatidan oldin to'liq to'xtatish uchun qaysi kalit so'z ishlatiladi?",
             "options": [
-                "back",
-                "return",
-                "give",
-                "send"
+                "break",
+                "stop",
+                "exit",
+                "continue"
             ],
-            "answer": "return"
+            "answer": "break"
         },
         {
-            "id": 93,
-            "question": "*args nima ma'noni anglatadi?",
+            "id": 43,
+            "question": "Siklning joriy aylanishini to'xtatib, keyingisiga o'tish uchun qaysi so'z ishlatiladi?",
             "options": [
-                "Istalgancha kalit-so'zli argumentlar",
-                "Faqat bitta argument",
-                "Istalgancha miqdordagi pozitsion argumentlar",
-                "Xatolik"
+                "continue",
+                "next",
+                "pass",
+                "skip"
             ],
-            "answer": "Istalgancha miqdordagi pozitsion argumentlar"
+            "answer": "continue"
         },
         {
-            "id": 94,
-            "question": "**kwargs nima?",
+            "id": 44,
+            "question": "for i in range(3): print(i) qanday natija beradi?",
             "options": [
-                "Ro'yxat argumentlar",
-                "Bo'sh argument",
-                "Ko'rsatkichlar (Pointers)",
-                "Lug'at shaklidagi argumentlar (kalit=qiymat)"
+                "0 1 2",
+                "1 2 3",
+                "0 1 2 3",
+                "3"
             ],
-            "answer": "Lug'at shaklidagi argumentlar (kalit=qiymat)"
+            "answer": "0 1 2"
         },
         {
-            "id": 95,
-            "question": "Nomsiz qisqa funksiyalar qanday ataladi?",
+            "id": 45,
+            "question": "for i in range(1, 4): print(i) qanday natija beradi?",
             "options": [
-                "lambda",
-                "short_func",
-                "inline",
-                "macro"
-            ],
-            "answer": "lambda"
-        },
-        {
-            "id": 96,
-            "question": "Funksiya qanday yaratiladi?",
-            "options": [
-                "def funksiya_nomi():",
-                "func funksiya_nomi:",
-                "create funksiya_nomi():",
-                "function funksiya_nomi()"
-            ],
-            "answer": "def funksiya_nomi():"
-        },
-        {
-            "id": 97,
-            "question": "Funksiyadan qiymat qaytarish uchun qaysi kalit so'z ishlatiladi?",
-            "options": [
-                "back",
-                "return",
-                "give",
-                "send"
-            ],
-            "answer": "return"
-        },
-        {
-            "id": 98,
-            "question": "*args nima ma'noni anglatadi?",
-            "options": [
-                "Istalgancha kalit-so'zli argumentlar",
-                "Faqat bitta argument",
-                "Istalgancha miqdordagi pozitsion argumentlar",
-                "Xatolik"
-            ],
-            "answer": "Istalgancha miqdordagi pozitsion argumentlar"
-        },
-        {
-            "id": 99,
-            "question": "**kwargs nima?",
-            "options": [
-                "Ro'yxat argumentlar",
-                "Bo'sh argument",
-                "Ko'rsatkichlar (Pointers)",
-                "Lug'at shaklidagi argumentlar (kalit=qiymat)"
-            ],
-            "answer": "Lug'at shaklidagi argumentlar (kalit=qiymat)"
-        },
-        {
-            "id": 100,
-            "question": "Nomsiz qisqa funksiyalar qanday ataladi?",
-            "options": [
-                "lambda",
-                "short_func",
-                "inline",
-                "macro"
-            ],
-            "answer": "lambda"
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [1, 1, 2]\nprint(sum(nums))",
-            "ans": "4",
-            "opts": [
-                "4",
-                "5",
-                "3",
-                "TypeError"
-            ],
-            "id": 101,
-            "options": [
-                "3",
-                "5",
-                "TypeError",
+                "1 2 3",
+                "1 2 3 4",
+                "0 1 2 3",
                 "4"
-            ]
+            ],
+            "answer": "1 2 3"
         },
         {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 1, 4]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 102,
+            "id": 46,
+            "question": "Sikl bo'sh bo'lganda xatolik bermasligi uchun qaysi so'z yozib qo'yiladi?",
             "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
+                "pass",
+                "ignore",
+                "continue",
+                "null"
+            ],
+            "answer": "pass"
         },
         {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 1, 1]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 103,
+            "id": 47,
+            "question": "while x < 5: kodi qachongacha aylanadi?",
             "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
+                "x ning qiymati 5 dan kichik bo'lsa",
+                "5 marta",
+                "x 5 ga teng bo'lguncha",
+                "x 5 dan katta bo'lsa"
+            ],
+            "answer": "x ning qiymati 5 dan kichik bo'lsa"
         },
         {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 3, 5]\nprint(sum(nums))",
-            "ans": "12",
-            "opts": [
-                "12",
-                "13",
-                "3",
-                "TypeError"
-            ],
-            "id": 104,
+            "id": 48,
+            "question": "range(2, 10, 2) qanday sonlar ketma-ketligini hosil qiladi?",
             "options": [
-                "13",
-                "3",
-                "TypeError",
-                "12"
-            ]
+                "2, 4, 6, 8",
+                "2, 3, 4, 5, 6, 7, 8, 9",
+                "1, 3, 5, 7, 9",
+                "2, 10"
+            ],
+            "answer": "2, 4, 6, 8"
         },
         {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 4, 4]\nprint(sum(nums))",
-            "ans": "11",
-            "opts": [
-                "11",
-                "12",
-                "3",
-                "TypeError"
-            ],
-            "id": 105,
+            "id": 49,
+            "question": "Sikl ichida yozilgan 'else' bloki qachon ishlaydi?",
             "options": [
-                "3",
-                "TypeError",
-                "11",
-                "12"
-            ]
+                "Sikl to'liq (break'siz) tugaganda",
+                "Har safar sikl aylanganda",
+                "Sikl 'break' orqali to'xtaganda",
+                "Xatolik bo'lganda"
+            ],
+            "answer": "Sikl to'liq (break'siz) tugaganda"
         },
         {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [1, 4, 5]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 106,
+            "id": 50,
+            "question": "Qaysi biri cheksiz siklga misol?",
             "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 1, 1]\nprint(sum(nums))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "7",
-                "3",
-                "TypeError"
+                "while True:",
+                "for i in range(1000):",
+                "while False:",
+                "for i in list:"
             ],
-            "id": 107,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "6"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 4, 5]\nprint(sum(nums))",
-            "ans": "11",
-            "opts": [
-                "11",
-                "12",
-                "3",
-                "TypeError"
-            ],
-            "id": 108,
-            "options": [
-                "3",
-                "TypeError",
-                "11",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [1, 5, 4]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 109,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 3, 2]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 110,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 4, 1]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 111,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 5, 3]\nprint(sum(nums))",
-            "ans": "13",
-            "opts": [
-                "13",
-                "14",
-                "3",
-                "TypeError"
-            ],
-            "id": 112,
-            "options": [
-                "3",
-                "14",
-                "TypeError",
-                "13"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [1, 5, 4]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 113,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 1, 3]\nprint(sum(nums))",
-            "ans": "8",
-            "opts": [
-                "8",
-                "9",
-                "3",
-                "TypeError"
-            ],
-            "id": 114,
-            "options": [
-                "3",
-                "TypeError",
-                "8",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 4, 1]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 115,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 5, 3]\nprint(sum(nums))",
-            "ans": "11",
-            "opts": [
-                "11",
-                "12",
-                "3",
-                "TypeError"
-            ],
-            "id": 116,
-            "options": [
-                "3",
-                "TypeError",
-                "11",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [1, 2, 4]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 117,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 5, 4]\nprint(sum(nums))",
-            "ans": "12",
-            "opts": [
-                "12",
-                "13",
-                "3",
-                "TypeError"
-            ],
-            "id": 118,
-            "options": [
-                "13",
-                "3",
-                "TypeError",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 1, 1]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 119,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 2, 5]\nprint(sum(nums))",
-            "ans": "9",
-            "opts": [
-                "9",
-                "10",
-                "3",
-                "TypeError"
-            ],
-            "id": 120,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 3, 2]\nprint(sum(nums))",
-            "ans": "8",
-            "opts": [
-                "8",
-                "9",
-                "3",
-                "TypeError"
-            ],
-            "id": 121,
-            "options": [
-                "3",
-                "TypeError",
-                "8",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 1, 1]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 122,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 3, 4]\nprint(sum(nums))",
-            "ans": "12",
-            "opts": [
-                "12",
-                "13",
-                "3",
-                "TypeError"
-            ],
-            "id": 123,
-            "options": [
-                "13",
-                "3",
-                "TypeError",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [1, 4, 2]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 124,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 5, 2]\nprint(sum(nums))",
-            "ans": "12",
-            "opts": [
-                "12",
-                "13",
-                "3",
-                "TypeError"
-            ],
-            "id": 125,
-            "options": [
-                "13",
-                "3",
-                "TypeError",
-                "12"
-            ]
+            "answer": "while True:"
         }
     ],
     "level_6": [
         {
-            "id": 126,
-            "question": "Modulni chaqirish uchun nima ishlatiladi?",
+            "id": 51,
+            "question": "Funksiya qanday kalit so'z bilan yaratiladi?",
             "options": [
-                "include",
-                "import",
-                "require",
-                "using"
+                "def",
+                "function",
+                "fun",
+                "create"
             ],
-            "answer": "import"
+            "answer": "def"
         },
         {
-            "id": 127,
-            "question": "Matematik funksiyalar (sqrt, sin) qaysi modulda joylashgan?",
+            "id": 52,
+            "question": "Funksiyadan qiymat qaytarish uchun qaysi so'z ishlatiladi?",
             "options": [
-                "math",
-                "statistics",
-                "numbers",
-                "calc"
+                "return",
+                "yield",
+                "give",
+                "back"
             ],
-            "answer": "math"
+            "answer": "return"
         },
         {
-            "id": 128,
-            "question": "Vaqt bilan ishlash uchun qaysi modul ishlatiladi?",
+            "id": 53,
+            "question": "Agar funksiyada 'return' yozilmasa, u nima qaytaradi?",
             "options": [
-                "timer",
-                "time yoki datetime",
-                "date",
-                "clock"
+                "None",
+                "0",
+                "False",
+                "Xatolik"
             ],
-            "answer": "time yoki datetime"
+            "answer": "None"
         },
         {
-            "id": 129,
-            "question": "Tizim (OS) fayllari bilan ishlash moduli qaysi?",
+            "id": 54,
+            "question": "Anonim funksiya (bir qatorli) qanday kalit so'z bilan yoziladi?",
             "options": [
-                "system",
-                "os",
-                "sys",
-                "files"
+                "lambda",
+                "anon",
+                "def",
+                "inline"
             ],
-            "answer": "os"
+            "answer": "lambda"
         },
         {
-            "id": 130,
-            "question": "Modul ichidan faqat bitta funksiyani import qilish?",
+            "id": 55,
+            "question": "x = lambda a: a + 10; print(x(5)) kodi nima chiqaradi?",
             "options": [
-                "from modul import funksiya",
-                "include funksiya",
-                "import funksiya from modul",
-                "import modul.funksiya"
-            ],
-            "answer": "from modul import funksiya"
-        },
-        {
-            "id": 131,
-            "question": "Modulni chaqirish uchun nima ishlatiladi?",
-            "options": [
-                "include",
-                "import",
-                "require",
-                "using"
-            ],
-            "answer": "import"
-        },
-        {
-            "id": 132,
-            "question": "Matematik funksiyalar (sqrt, sin) qaysi modulda joylashgan?",
-            "options": [
-                "math",
-                "statistics",
-                "numbers",
-                "calc"
-            ],
-            "answer": "math"
-        },
-        {
-            "id": 133,
-            "question": "Vaqt bilan ishlash uchun qaysi modul ishlatiladi?",
-            "options": [
-                "timer",
-                "time yoki datetime",
-                "date",
-                "clock"
-            ],
-            "answer": "time yoki datetime"
-        },
-        {
-            "id": 134,
-            "question": "Tizim (OS) fayllari bilan ishlash moduli qaysi?",
-            "options": [
-                "system",
-                "os",
-                "sys",
-                "files"
-            ],
-            "answer": "os"
-        },
-        {
-            "id": 135,
-            "question": "Modul ichidan faqat bitta funksiyani import qilish?",
-            "options": [
-                "from modul import funksiya",
-                "include funksiya",
-                "import funksiya from modul",
-                "import modul.funksiya"
-            ],
-            "answer": "from modul import funksiya"
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 2, 5]\nprint(sum(nums))",
-            "ans": "9",
-            "opts": [
-                "9",
-                "10",
-                "3",
-                "TypeError"
-            ],
-            "id": 136,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 2, 1]\nprint(sum(nums))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "6",
-                "3",
-                "TypeError"
-            ],
-            "id": 137,
-            "options": [
-                "3",
-                "5",
-                "TypeError",
-                "6"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 2, 3]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 138,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 2, 5]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 139,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 4, 1]\nprint(sum(nums))",
-            "ans": "9",
-            "opts": [
-                "9",
-                "10",
-                "3",
-                "TypeError"
-            ],
-            "id": 140,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 2, 2]\nprint(sum(nums))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "7",
-                "3",
-                "TypeError"
-            ],
-            "id": 141,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "6"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 1, 3]\nprint(sum(nums))",
-            "ans": "8",
-            "opts": [
-                "8",
-                "9",
-                "3",
-                "TypeError"
-            ],
-            "id": 142,
-            "options": [
-                "3",
-                "TypeError",
-                "8",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 3, 4]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 143,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 3, 1]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 144,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 3, 2]\nprint(sum(nums))",
-            "ans": "9",
-            "opts": [
-                "9",
-                "10",
-                "3",
-                "TypeError"
-            ],
-            "id": 145,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 3, 4]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 146,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 5, 1]\nprint(sum(nums))",
-            "ans": "9",
-            "opts": [
-                "9",
-                "10",
-                "3",
-                "TypeError"
-            ],
-            "id": 147,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 3, 5]\nprint(sum(nums))",
-            "ans": "12",
-            "opts": [
-                "12",
-                "13",
-                "3",
-                "TypeError"
-            ],
-            "id": 148,
-            "options": [
-                "13",
-                "3",
-                "TypeError",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 3, 1]\nprint(sum(nums))",
-            "ans": "9",
-            "opts": [
-                "9",
-                "10",
-                "3",
-                "TypeError"
-            ],
-            "id": 149,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 4, 3]\nprint(sum(nums))",
-            "ans": "11",
-            "opts": [
-                "11",
-                "12",
-                "3",
-                "TypeError"
-            ],
-            "id": 150,
-            "options": [
-                "3",
-                "TypeError",
-                "11",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 4, 1]\nprint(sum(nums))",
-            "ans": "8",
-            "opts": [
-                "8",
-                "9",
-                "3",
-                "TypeError"
-            ],
-            "id": 151,
-            "options": [
-                "3",
-                "TypeError",
-                "8",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 4, 4]\nprint(sum(nums))",
-            "ans": "11",
-            "opts": [
-                "11",
-                "12",
-                "3",
-                "TypeError"
-            ],
-            "id": 152,
-            "options": [
-                "3",
-                "TypeError",
-                "11",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 3, 5]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 153,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 3, 1]\nprint(sum(nums))",
-            "ans": "7",
-            "opts": [
-                "7",
-                "8",
-                "3",
-                "TypeError"
-            ],
-            "id": 154,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "8"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 1, 3]\nprint(sum(nums))",
-            "ans": "8",
-            "opts": [
-                "8",
-                "9",
-                "3",
-                "TypeError"
-            ],
-            "id": 155,
-            "options": [
-                "3",
-                "TypeError",
-                "8",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 4, 3]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 156,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [1, 5, 2]\nprint(sum(nums))",
-            "ans": "8",
-            "opts": [
-                "8",
-                "9",
-                "3",
-                "TypeError"
-            ],
-            "id": 157,
-            "options": [
-                "3",
-                "TypeError",
-                "8",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [3, 2, 3]\nprint(sum(nums))",
-            "ans": "8",
-            "opts": [
-                "8",
-                "9",
-                "3",
-                "TypeError"
-            ],
-            "id": 158,
-            "options": [
-                "3",
-                "TypeError",
-                "8",
-                "9"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 4, 4]\nprint(sum(nums))",
-            "ans": "12",
-            "opts": [
-                "12",
-                "13",
-                "3",
-                "TypeError"
-            ],
-            "id": 159,
-            "options": [
-                "13",
-                "3",
-                "TypeError",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 3, 5]\nprint(sum(nums))",
-            "ans": "12",
-            "opts": [
-                "12",
-                "13",
-                "3",
-                "TypeError"
-            ],
-            "id": 160,
-            "options": [
-                "13",
-                "3",
-                "TypeError",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [2, 5, 4]\nprint(sum(nums))",
-            "ans": "11",
-            "opts": [
-                "11",
-                "12",
-                "3",
-                "TypeError"
-            ],
-            "id": 161,
-            "options": [
-                "3",
-                "TypeError",
-                "11",
-                "12"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 4, 4]\nprint(sum(nums))",
-            "ans": "13",
-            "opts": [
-                "13",
-                "14",
-                "3",
-                "TypeError"
-            ],
-            "id": 162,
-            "options": [
-                "3",
-                "14",
-                "TypeError",
-                "13"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [4, 3, 3]\nprint(sum(nums))",
-            "ans": "10",
-            "opts": [
-                "10",
-                "11",
-                "3",
-                "TypeError"
-            ],
-            "id": 163,
-            "options": [
-                "10",
-                "3",
-                "TypeError",
-                "11"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [1, 4, 1]\nprint(sum(nums))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "7",
-                "3",
-                "TypeError"
-            ],
-            "id": 164,
-            "options": [
-                "3",
-                "7",
-                "TypeError",
-                "6"
-            ]
-        },
-        {
-            "q": "Quyidagi Python kodi qanday natija beradi?\n\nnums = [5, 4, 5]\nprint(sum(nums))",
-            "ans": "14",
-            "opts": [
-                "14",
                 "15",
-                "3",
-                "TypeError"
+                "5",
+                "10",
+                "Xatolik"
             ],
-            "id": 165,
+            "answer": "15"
+        },
+        {
+            "id": 56,
+            "question": "O'zgaruvchan sondagi argumentlarni qabul qilish uchun nima ishlatiladi?",
             "options": [
-                "3",
-                "14",
-                "TypeError",
-                "15"
-            ]
+                "*args",
+                "**kwargs",
+                "var_args",
+                "params"
+            ],
+            "answer": "*args"
+        },
+        {
+            "id": 57,
+            "question": "Lug'at ko'rinishidagi o'zgaruvchan argumentlarni qabul qilish uchun nima ishlatiladi?",
+            "options": [
+                "**kwargs",
+                "*args",
+                "dict_args",
+                "kwargs"
+            ],
+            "answer": "**kwargs"
+        },
+        {
+            "id": 58,
+            "question": "Funksiya parametriga standart (default) qiymat qanday beriladi?",
+            "options": [
+                "def func(x=10):",
+                "def func(x: 10):",
+                "def func(10):",
+                "def func()=10:"
+            ],
+            "answer": "def func(x=10):"
+        },
+        {
+            "id": 59,
+            "question": "Rekursiv funksiya nima?",
+            "options": [
+                "O'zini o'zi chaqiruvchi funksiya",
+                "Boshqa funksiyani chaqiruvchi",
+                "Hech narsa qaytarmaydigan",
+                "Matnlar bilan ishlaydigan"
+            ],
+            "answer": "O'zini o'zi chaqiruvchi funksiya"
+        },
+        {
+            "id": 60,
+            "question": "Global o'zgaruvchini funksiya ichida o'zgartirish uchun qaysi so'z kerak?",
+            "options": [
+                "global",
+                "local",
+                "var",
+                "nonlocal"
+            ],
+            "answer": "global"
         }
     ],
     "level_7": [
         {
-            "id": 166,
-            "question": "Obyektga Yo'naltirilgan Dasturlashda (OOP) klass qanday yaratiladi?",
+            "id": 61,
+            "question": "Sinf (Class) yaratish uchun qaysi so'z ishlatiladi?",
             "options": [
-                "create class KlassNomi:",
-                "class KlassNomi:",
-                "object KlassNomi:",
-                "def KlassNomi():"
+                "class",
+                "object",
+                "struct",
+                "def"
             ],
-            "answer": "class KlassNomi:"
+            "answer": "class"
         },
         {
-            "id": 167,
-            "question": "Klass konstruktori qanday nomlanadi?",
+            "id": 62,
+            "question": "Sinfning konstruktori (yaratuvchi metodi) qanday nomlanadi?",
             "options": [
                 "__init__",
-                "init",
                 "constructor",
-                "__start__"
+                "__start__",
+                "init"
             ],
             "answer": "__init__"
         },
         {
-            "id": 168,
-            "question": "Klass metodida birinchi parametr doim nima bo'ladi?",
+            "id": 63,
+            "question": "Sinf metodlarining birinchi parametri odatda nima bo'ladi?",
             "options": [
-                "cls",
-                "obj",
                 "self",
-                "this"
+                "this",
+                "obj",
+                "me"
             ],
             "answer": "self"
         },
         {
-            "id": 169,
-            "question": "Klassdan nusxa (obyekt) qanday olinadi?",
+            "id": 64,
+            "question": "OOP dagi 'Vorislik' (Inheritance) nima?",
             "options": [
-                "obj = new KlassNomi()",
-                "KlassNomi obj = new",
-                "obj = create KlassNomi",
-                "obj = KlassNomi()"
+                "Bir sinf boshqa sinfning xususiyatlarini olishi",
+                "Sinfni o'chirish",
+                "Metodlarni yashirish",
+                "Obyektni nusxalash"
             ],
-            "answer": "obj = KlassNomi()"
+            "answer": "Bir sinf boshqa sinfning xususiyatlarini olishi"
         },
         {
-            "id": 170,
-            "question": "Obyektning xususiyatiga murojaat qilish:",
+            "id": 65,
+            "question": "Vorislangan sinf asosiy sinfning xususiyatini o'zgartirsa bu nima deyiladi?",
             "options": [
-                "obj->xususiyat",
-                "obj:xususiyat",
-                "obj[xususiyat]",
-                "obj.xususiyat"
+                "Polimorfizm / Overriding",
+                "Inkapsulyatsiya",
+                "Abstraksiya",
+                "Xatolik"
             ],
-            "answer": "obj.xususiyat"
+            "answer": "Polimorfizm / Overriding"
         },
         {
-            "id": 171,
-            "question": "Obyektga Yo'naltirilgan Dasturlashda (OOP) klass qanday yaratiladi?",
+            "id": 66,
+            "question": "Ma'lumotlarni yashirish (Maxfiylik) qaysi OOP tamoyiliga kiradi?",
             "options": [
-                "create class KlassNomi:",
-                "class KlassNomi:",
-                "object KlassNomi:",
-                "def KlassNomi():"
+                "Inkapsulyatsiya",
+                "Polimorfizm",
+                "Vorislik",
+                "Abstraksiya"
             ],
-            "answer": "class KlassNomi:"
+            "answer": "Inkapsulyatsiya"
         },
         {
-            "id": 172,
-            "question": "Klass konstruktori qanday nomlanadi?",
+            "id": 67,
+            "question": "Python'da qat'iy maxfiy (private) xususiyatlar qanday boshlanadi?",
             "options": [
-                "__init__",
-                "init",
-                "constructor",
-                "__start__"
+                "__ (Ikkita pastki chiziq)",
+                "_ (Bitta pastki chiziq)",
+                "private_",
+                "hidden_"
             ],
-            "answer": "__init__"
+            "answer": "__ (Ikkita pastki chiziq)"
         },
         {
-            "id": 173,
-            "question": "Klass metodida birinchi parametr doim nima bo'ladi?",
+            "id": 68,
+            "question": "Asosiy sinfning __init__ metodini chaqirish uchun qaysi funksiya kerak?",
             "options": [
-                "cls",
-                "obj",
-                "self",
-                "this"
+                "super()",
+                "base()",
+                "parent()",
+                "main()"
             ],
-            "answer": "self"
+            "answer": "super()"
         },
         {
-            "id": 174,
-            "question": "Klassdan nusxa (obyekt) qanday olinadi?",
+            "id": 69,
+            "question": "class Car: pass - ushbu kod nima qiladi?",
             "options": [
-                "obj = new KlassNomi()",
-                "KlassNomi obj = new",
-                "obj = create KlassNomi",
-                "obj = KlassNomi()"
+                "Bo'sh sinf yaratadi",
+                "Xatolik beradi",
+                "Obyekt yaratadi",
+                "Dasturni tugatadi"
             ],
-            "answer": "obj = KlassNomi()"
+            "answer": "Bo'sh sinf yaratadi"
         },
         {
-            "id": 175,
-            "question": "Obyektning xususiyatiga murojaat qilish:",
+            "id": 70,
+            "question": "Obyekt qanday yaratiladi? (MyClass nomli sinf bo'lsa)",
             "options": [
-                "obj->xususiyat",
-                "obj:xususiyat",
-                "obj[xususiyat]",
-                "obj.xususiyat"
+                "obj = MyClass()",
+                "obj = new MyClass()",
+                "obj = create MyClass()",
+                "MyClass obj"
             ],
-            "answer": "obj.xususiyat"
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 176,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Coder'\nprint(len(text))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 177,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 178,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 179,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 180,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Coder'\nprint(len(msg))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 181,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 182,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 183,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 184,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 185,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 186,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 187,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 188,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Coder'\nprint(len(text))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 189,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 190,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 191,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 192,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 193,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 194,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 195,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 196,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 197,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 198,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Pro'\nprint(len(msg))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 199,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Pro'\nprint(len(msg))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 200,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 201,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 202,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 203,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 204,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 205,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 206,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 207,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 208,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 209,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Coder'\nprint(len(text))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 210,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
+            "answer": "obj = MyClass()"
         }
     ],
     "level_8": [
         {
-            "id": 211,
-            "question": "Vorislik (Inheritance) nima?",
+            "id": 71,
+            "question": "Xatoliklarni ushlash qaysi blok bilan boshlanadi?",
             "options": [
-                "Polimorfizm",
-                "Klassni o'chirish",
-                "Bir klassning boshqa klass xususiyatlarini meros olishi",
-                "Klass ichida yana klass yaratish"
+                "try",
+                "catch",
+                "except",
+                "handle"
             ],
-            "answer": "Bir klassning boshqa klass xususiyatlarini meros olishi"
+            "answer": "try"
         },
         {
-            "id": 212,
-            "question": "Vorislangan klassda ota klassning metodini ishlatish?",
+            "id": 72,
+            "question": "'try' blokida xatolik yuz bersa, qaysi blok ishga tushadi?",
             "options": [
-                "parent()",
-                "self.parent",
-                "base()",
-                "super()"
+                "except",
+                "catch",
+                "else",
+                "finally"
             ],
-            "answer": "super()"
+            "answer": "except"
         },
         {
-            "id": 213,
-            "question": "Polimorfizm nima?",
+            "id": 73,
+            "question": "Xatolik bo'lsa ham, bo'lmasa ham har doim ishlaydigan blok qaysi?",
             "options": [
-                "Faqat raqamlar ustida amal",
-                "Bir xil nomli metodlarning turli klasslarda turlicha ishlashi",
-                "Kapsulyatsiya qismi",
-                "Bir nechta ota klassdan meros olish"
+                "finally",
+                "always",
+                "else",
+                "except"
             ],
-            "answer": "Bir xil nomli metodlarning turli klasslarda turlicha ishlashi"
+            "answer": "finally"
         },
         {
-            "id": 214,
-            "question": "Kapsulyatsiya deganda nima tushuniladi?",
+            "id": 74,
+            "question": "Sun'iy tarzda (qasddan) xatolik yuzaga keltirish uchun qaysi so'z ishlatiladi?",
             "options": [
-                "Tezlikni oshirish",
-                "Kodni siqish",
-                "Ma'lumotlarni yashirish va tashqaridan to'g'ridan-to'g'ri o'zgartirishni cheklash",
-                "Klassni boshqa faylga o'tkazish"
+                "raise",
+                "throw",
+                "error",
+                "drop"
             ],
-            "answer": "Ma'lumotlarni yashirish va tashqaridan to'g'ridan-to'g'ri o'zgartirishni cheklash"
+            "answer": "raise"
         },
         {
-            "id": 215,
-            "question": "Python'da xususiy (private) o'zgaruvchi qanday yoziladi?",
+            "id": 75,
+            "question": "Faylni o'qish uchun qanday usulda ochish kerak?",
             "options": [
-                "__nomi",
-                "@nomi",
-                "private nomi",
-                "nomi_private"
+                "'r'",
+                "'w'",
+                "'a'",
+                "'x'"
             ],
-            "answer": "__nomi"
+            "answer": "'r'"
         },
         {
-            "id": 216,
-            "question": "Vorislik (Inheritance) nima?",
+            "id": 76,
+            "question": "Faylga yangi ma'lumotni ustidan yozib yuborish (o'chirib yozish) uchun qaysi rejim kerak?",
             "options": [
-                "Polimorfizm",
-                "Klassni o'chirish",
-                "Bir klassning boshqa klass xususiyatlarini meros olishi",
-                "Klass ichida yana klass yaratish"
+                "'w'",
+                "'a'",
+                "'r'",
+                "'w+'"
             ],
-            "answer": "Bir klassning boshqa klass xususiyatlarini meros olishi"
+            "answer": "'w'"
         },
         {
-            "id": 217,
-            "question": "Vorislangan klassda ota klassning metodini ishlatish?",
+            "id": 77,
+            "question": "Fayldagi ma'lumotning oxiriga qo'shimcha qilish uchun qaysi rejim kerak?",
             "options": [
-                "parent()",
-                "self.parent",
-                "base()",
-                "super()"
+                "'a'",
+                "'w'",
+                "'r'",
+                "'add'"
             ],
-            "answer": "super()"
+            "answer": "'a'"
         },
         {
-            "id": 218,
-            "question": "Polimorfizm nima?",
+            "id": 78,
+            "question": "Fayl ochilgandan so'ng, uni albatta yopish uchun qaysi metod ishlatiladi?",
             "options": [
-                "Faqat raqamlar ustida amal",
-                "Bir xil nomli metodlarning turli klasslarda turlicha ishlashi",
-                "Kapsulyatsiya qismi",
-                "Bir nechta ota klassdan meros olish"
+                "close()",
+                "exit()",
+                "stop()",
+                "finish()"
             ],
-            "answer": "Bir xil nomli metodlarning turli klasslarda turlicha ishlashi"
+            "answer": "close()"
         },
         {
-            "id": 219,
-            "question": "Kapsulyatsiya deganda nima tushuniladi?",
+            "id": 79,
+            "question": "Faylni o'zi avtomat yopadigan eng xavfsiz fayl ochish usuli qaysi?",
             "options": [
-                "Tezlikni oshirish",
-                "Kodni siqish",
-                "Ma'lumotlarni yashirish va tashqaridan to'g'ridan-to'g'ri o'zgartirishni cheklash",
-                "Klassni boshqa faylga o'tkazish"
+                "with open(...) as f:",
+                "open(...)",
+                "f = open(...)",
+                "read_file(...)"
             ],
-            "answer": "Ma'lumotlarni yashirish va tashqaridan to'g'ridan-to'g'ri o'zgartirishni cheklash"
+            "answer": "with open(...) as f:"
         },
         {
-            "id": 220,
-            "question": "Python'da xususiy (private) o'zgaruvchi qanday yoziladi?",
+            "id": 80,
+            "question": "ZeroDivisionError qachon yuz beradi?",
             "options": [
-                "__nomi",
-                "@nomi",
-                "private nomi",
-                "nomi_private"
+                "Sonni nolga bo'lganda",
+                "Nolni soniga bo'lganda",
+                "Fayl topilmaganda",
+                "O'zgaruvchi e'lon qilinmaganda"
             ],
-            "answer": "__nomi"
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 221,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 222,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 223,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 224,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 225,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Coder'\nprint(len(text))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 226,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 227,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Coder'\nprint(len(msg))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 228,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 229,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 230,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 231,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 232,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 233,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 234,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 235,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 236,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 237,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Pro'\nprint(len(msg))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 238,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 239,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 240,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 241,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 242,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 243,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 244,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 245,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 246,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 247,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 248,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 249,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 250,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 251,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 252,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 253,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 254,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 255,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 256,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Coder'\nprint(len(text))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 257,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 258,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 259,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 260,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
+            "answer": "Sonni nolga bo'lganda"
         }
     ],
     "level_9": [
         {
-            "id": 261,
-            "question": "Xatoliklarni ushlash qaysi blok yordamida qilinadi?",
+            "id": 81,
+            "question": "Boshqa fayldagi (moduldagi) kodni yuklash uchun nima ishlatiladi?",
             "options": [
-                "try...except",
-                "try...catch",
-                "do...error",
-                "catch...throw"
+                "import",
+                "include",
+                "require",
+                "load"
             ],
-            "answer": "try...except"
+            "answer": "import"
         },
         {
-            "id": 262,
-            "question": "Faylni o'qish uchun qaysi funksiya ishlatiladi?",
+            "id": 82,
+            "question": "Matematik funksiyalar qaysi modulda joylashgan?",
             "options": [
-                "open()",
-                "read_file()",
-                "load()",
-                "file()"
+                "math",
+                "calc",
+                "numbers",
+                "statistics"
             ],
-            "answer": "open()"
+            "answer": "math"
         },
         {
-            "id": 263,
-            "question": "Faylni xavfsiz ochib yopish uchun nima ishlatiladi?",
+            "id": 83,
+            "question": "Tasodifiy sonlar yaratish uchun qaysi modul kerak?",
             "options": [
-                "with open(...) as f:",
-                "open_close()",
-                "try_open",
-                "safe_open()"
+                "random",
+                "rand",
+                "chance",
+                "shuffle"
             ],
-            "answer": "with open(...) as f:"
+            "answer": "random"
         },
         {
-            "id": 264,
-            "question": "Barcha istisnolarni (Exception) ushlash uchun qaysi so'z ishlatiladi?",
+            "id": 84,
+            "question": "Hozirgi vaqt va sanani olish uchun qaysi moduldan foydalanamiz?",
             "options": [
-                "except Exception:",
-                "catch all",
-                "except All:",
-                "catch Exception"
+                "datetime",
+                "time",
+                "date",
+                "clock"
             ],
-            "answer": "except Exception:"
+            "answer": "datetime"
         },
         {
-            "id": 265,
-            "question": "finally blogi qachon ishga tushadi?",
+            "id": 85,
+            "question": "Operatsion tizim bilan ishlash (masalan, papka yaratish) moduli qaysi?",
             "options": [
-                "Har doim (xato bo'lsa ham, bo'lmasa ham)",
-                "Faqat xato bo'lsa",
-                "Hech qachon",
-                "Xato bo'lmasa"
+                "os",
+                "sys",
+                "system",
+                "file"
             ],
-            "answer": "Har doim (xato bo'lsa ham, bo'lmasa ham)"
+            "answer": "os"
         },
         {
-            "id": 266,
-            "question": "Xatoliklarni ushlash qaysi blok yordamida qilinadi?",
+            "id": 86,
+            "question": "math.sqrt(16) qanday natija beradi?",
             "options": [
-                "try...except",
-                "try...catch",
-                "do...error",
-                "catch...throw"
+                "4.0",
+                "8.0",
+                "16.0",
+                "2.0"
             ],
-            "answer": "try...except"
+            "answer": "4.0"
         },
         {
-            "id": 267,
-            "question": "Faylni o'qish uchun qaysi funksiya ishlatiladi?",
+            "id": 87,
+            "question": "random.randint(1, 10) nima qaytaradi?",
             "options": [
-                "open()",
-                "read_file()",
-                "load()",
-                "file()"
+                "1 dan 10 gacha tasodifiy butun son",
+                "1 dan 9 gacha",
+                "Faqat 10",
+                "Faqat 1"
             ],
-            "answer": "open()"
+            "answer": "1 dan 10 gacha tasodifiy butun son"
         },
         {
-            "id": 268,
-            "question": "Faylni xavfsiz ochib yopish uchun nima ishlatiladi?",
+            "id": 88,
+            "question": "Dasturni butunlay to'xtatish uchun sys modulidagi qaysi funksiya ishlatiladi?",
             "options": [
-                "with open(...) as f:",
-                "open_close()",
-                "try_open",
-                "safe_open()"
+                "sys.exit()",
+                "sys.stop()",
+                "sys.quit()",
+                "sys.close()"
             ],
-            "answer": "with open(...) as f:"
+            "answer": "sys.exit()"
         },
         {
-            "id": 269,
-            "question": "Barcha istisnolarni (Exception) ushlash uchun qaysi so'z ishlatiladi?",
+            "id": 89,
+            "question": "JSON formatidagi ma'lumotlar bilan ishlash uchun qaysi modul kerak?",
             "options": [
-                "except Exception:",
-                "catch all",
-                "except All:",
-                "catch Exception"
+                "json",
+                "yaml",
+                "dict",
+                "parse"
             ],
-            "answer": "except Exception:"
+            "answer": "json"
         },
         {
-            "id": 270,
-            "question": "finally blogi qachon ishga tushadi?",
+            "id": 90,
+            "question": "Qaysi kalit so'z modulga qisqartma (alias) berish uchun ishlatiladi? (masalan import numpy ... np)",
             "options": [
-                "Har doim (xato bo'lsa ham, bo'lmasa ham)",
-                "Faqat xato bo'lsa",
-                "Hech qachon",
-                "Xato bo'lmasa"
+                "as",
+                "like",
+                "to",
+                "for"
             ],
-            "answer": "Har doim (xato bo'lsa ham, bo'lmasa ham)"
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 271,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 272,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 273,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 274,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Pro'\nprint(len(msg))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 275,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Pro'\nprint(len(msg))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 276,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 277,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Pro'\nprint(len(msg))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 278,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 279,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Coder'\nprint(len(text))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 280,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 281,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Coder'\nprint(len(text))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 282,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Pro'\nprint(len(msg))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 283,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 284,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 285,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Coder'\nprint(len(msg))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 286,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 287,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 288,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 289,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 290,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 291,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 292,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 293,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 294,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 295,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 296,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 297,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 298,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 299,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Coder'\nprint(len(text))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 300,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 301,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 302,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 303,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 304,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 305,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 306,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 307,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Coder'\nprint(len(msg))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 308,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 309,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 310,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 311,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 312,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 313,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 314,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 315,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
+            "answer": "as"
         }
     ],
     "level_10": [
         {
-            "id": 316,
-            "question": "Dekorator (Decorator) nima?",
+            "id": 91,
+            "question": "[x*2 for x in range(3)] ning natijasi nima?",
             "options": [
-                "Dizayn uchun kutubxona",
-                "Matematik funksiya",
-                "Xatoliklarni topuvchi vosita",
-                "Funksiyaga o'zgartirish kiritmay unga yangi imkoniyat qo'shuvchi funksiya"
+                "[0, 2, 4]",
+                "[0, 1, 2]",
+                "[2, 4, 6]",
+                "Xatolik"
             ],
-            "answer": "Funksiyaga o'zgartirish kiritmay unga yangi imkoniyat qo'shuvchi funksiya"
+            "answer": "[0, 2, 4]"
         },
         {
-            "id": 317,
-            "question": "Generator funksiya qaysi so'z yordamida yaratiladi?",
+            "id": 92,
+            "question": "Ro'yxatdagi barcha elementlarga ma'lum bir funksiyani qo'llash uchun qaysi funksiya ishlatiladi?",
             "options": [
-                "produce",
-                "return",
-                "yield",
-                "generate"
+                "map()",
+                "filter()",
+                "apply()",
+                "reduce()"
             ],
-            "answer": "yield"
+            "answer": "map()"
         },
         {
-            "id": 318,
-            "question": "List comprehension (Qisqa ro'yxat) misoli qaysi?",
+            "id": 93,
+            "question": "Shartga mos keladigan elementlarni ajratib olish uchun qaysi funksiya kerak?",
             "options": [
-                "[x for x in range(10)]",
-                "create list 1 to 10",
-                "for x in 10: list",
-                "list(x in range(10))"
+                "filter()",
+                "map()",
+                "select()",
+                "extract()"
             ],
-            "answer": "[x for x in range(10)]"
+            "answer": "filter()"
         },
         {
-            "id": 319,
-            "question": "yield va return o'rtasidagi farq?",
+            "id": 94,
+            "question": "Katta hajmdagi ma'lumotlarni xotirani to'ldirmasdan yaratish uchun nima ishlatiladi?",
             "options": [
-                "yield tezroq",
-                "yield faqat xatolikda ishlatiladi",
-                "yield holatni saqlab qiymat qaytaradi, return funksiyani butunlay tugatadi",
-                "Farqi yo'q"
+                "Generator (yield)",
+                "List",
+                "Tuple",
+                "Set"
             ],
-            "answer": "yield holatni saqlab qiymat qaytaradi, return funksiyani butunlay tugatadi"
+            "answer": "Generator (yield)"
         },
         {
-            "id": 320,
-            "question": "Dunder metodlar (__str__, __len__) nima?",
+            "id": 95,
+            "question": "Decorator (Dekorator) nima uchun ishlatiladi?",
             "options": [
-                "Python'ning maxsus ichki metodlari (Magic methods)",
-                "Oddiy foydalanuvchi metodlari",
-                "Xatolik chiqaruvchi metodlar",
-                "Faqat listlarda ishlaydi"
+                "Funksiyaga uni o'zgartirmasdan qo'shimcha vazifa qo'shish uchun",
+                "Obyektni o'chirish uchun",
+                "Xatoliklarni ushlash uchun",
+                "Siklni tezlashtirish uchun"
             ],
-            "answer": "Python'ning maxsus ichki metodlari (Magic methods)"
+            "answer": "Funksiyaga uni o'zgartirmasdan qo'shimcha vazifa qo'shish uchun"
         },
         {
-            "id": 321,
-            "question": "Dekorator (Decorator) nima?",
+            "id": 96,
+            "question": "Dekorator funksiya oldidan qaysi belgi qo'yiladi?",
             "options": [
-                "Dizayn uchun kutubxona",
-                "Matematik funksiya",
-                "Xatoliklarni topuvchi vosita",
-                "Funksiyaga o'zgartirish kiritmay unga yangi imkoniyat qo'shuvchi funksiya"
+                "@",
+                "#",
+                "$",
+                "&"
             ],
-            "answer": "Funksiyaga o'zgartirish kiritmay unga yangi imkoniyat qo'shuvchi funksiya"
+            "answer": "@"
         },
         {
-            "id": 322,
-            "question": "Generator funksiya qaysi so'z yordamida yaratiladi?",
+            "id": 97,
+            "question": "List comprehension nima beradi?",
             "options": [
-                "produce",
-                "return",
-                "yield",
-                "generate"
+                "Qisqa va ixcham ro'yxat yaratish",
+                "Siklni sekinlashtirish",
+                "Matnni tahlil qilish",
+                "Xatolikni tekshirish"
             ],
-            "answer": "yield"
+            "answer": "Qisqa va ixcham ro'yxat yaratish"
         },
         {
-            "id": 323,
-            "question": "List comprehension (Qisqa ro'yxat) misoli qaysi?",
+            "id": 98,
+            "question": "a, b = b, a kodi nima qiladi?",
             "options": [
-                "[x for x in range(10)]",
-                "create list 1 to 10",
-                "for x in 10: list",
-                "list(x in range(10))"
+                "Ikkita o'zgaruvchining qiymatlarini o'rin almashtiradi",
+                "Ikkalasini nolga tenglaydi",
+                "Xatolik beradi",
+                "Ikkalasini qo'shadi"
             ],
-            "answer": "[x for x in range(10)]"
+            "answer": "Ikkita o'zgaruvchining qiymatlarini o'rin almashtiradi"
         },
         {
-            "id": 324,
-            "question": "yield va return o'rtasidagi farq?",
+            "id": 99,
+            "question": "Muntazam ifodalar (Regular expressions) bilan ishlash moduli qaysi?",
             "options": [
-                "yield tezroq",
-                "yield faqat xatolikda ishlatiladi",
-                "yield holatni saqlab qiymat qaytaradi, return funksiyani butunlay tugatadi",
-                "Farqi yo'q"
+                "re",
+                "regex",
+                "match",
+                "pattern"
             ],
-            "answer": "yield holatni saqlab qiymat qaytaradi, return funksiyani butunlay tugatadi"
+            "answer": "re"
         },
         {
-            "id": 325,
-            "question": "Dunder metodlar (__str__, __len__) nima?",
+            "id": 100,
+            "question": "x = [1, 2, 3]; y = x.copy() bu qanday nusxalash?",
             "options": [
-                "Python'ning maxsus ichki metodlari (Magic methods)",
-                "Oddiy foydalanuvchi metodlari",
-                "Xatolik chiqaruvchi metodlar",
-                "Faqat listlarda ishlaydi"
+                "Sayoz (Shallow) nusxalash",
+                "Chuqur (Deep) nusxalash",
+                "Nusxa olinmaydi",
+                "Siltemali (Reference)"
             ],
-            "answer": "Python'ning maxsus ichki metodlari (Magic methods)"
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Coder'\nprint(len(msg))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 326,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 327,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 328,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 329,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 330,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 331,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 332,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Pro'\nprint(len(msg))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 333,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 334,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 335,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 336,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Coder'\nprint(len(msg))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 337,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 338,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Coder'\nprint(len(msg))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 339,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 340,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 341,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 342,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 343,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 344,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 345,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 346,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 347,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 348,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Python'\nprint(len(text))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 349,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 350,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 351,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 352,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 353,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 354,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Coder'\nprint(len(text))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 355,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 356,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Pro'\nprint(len(msg))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 357,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 358,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 359,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 360,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Coder'\nprint(len(msg))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 361,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Pro'\nprint(len(msg))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 362,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Pro'\nprint(len(word))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 363,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Coder'\nprint(len(text))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 364,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Python'\nprint(len(msg))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 365,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 366,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Coder'\nprint(len(msg))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 367,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'AI'\nprint(len(text))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 368,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'Pro'\nprint(len(msg))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 369,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Coder'\nprint(len(word))",
-            "ans": "5",
-            "opts": [
-                "5",
-                "Coder",
-                "4",
-                "Xatolik"
-            ],
-            "id": 370,
-            "options": [
-                "5",
-                "4",
-                "Xatolik",
-                "Coder"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nmsg = 'AI'\nprint(len(msg))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 371,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'Python'\nprint(len(word))",
-            "ans": "6",
-            "opts": [
-                "6",
-                "Python",
-                "5",
-                "Xatolik"
-            ],
-            "id": 372,
-            "options": [
-                "Python",
-                "5",
-                "6",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\ntext = 'Pro'\nprint(len(text))",
-            "ans": "3",
-            "opts": [
-                "3",
-                "Pro",
-                "2",
-                "Xatolik"
-            ],
-            "id": 373,
-            "options": [
-                "3",
-                "2",
-                "Pro",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 374,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
-        },
-        {
-            "q": "Quyidagi kod natijasi nima bo'ladi?\n\nword = 'AI'\nprint(len(word))",
-            "ans": "2",
-            "opts": [
-                "2",
-                "AI",
-                "1",
-                "Xatolik"
-            ],
-            "id": 375,
-            "options": [
-                "1",
-                "2",
-                "AI",
-                "Xatolik"
-            ]
+            "answer": "Sayoz (Shallow) nusxalash"
         }
     ]
 }

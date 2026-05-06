@@ -1,0 +1,129 @@
+import json
+
+tests = {
+    "level_1": [
+        {"id": 1, "question": "Python'da ekranga xabar chiqarish qanday yoziladi?", "options": ["print('Xabar')", "echo('Xabar')", "console.log('Xabar')", "System.out.println('Xabar')"], "answer": "print('Xabar')"},
+        {"id": 2, "question": "Foydalanuvchidan ma'lumot kiritishni so'rash uchun qaysi funksiya ishlatiladi?", "options": ["input()", "get()", "scan()", "read()"], "answer": "input()"},
+        {"id": 3, "question": "Qaysi belgi Python'da izoh (comment) qoldirish uchun ishlatiladi?", "options": ["#", "//", "/*", "<!--"], "answer": "#"},
+        {"id": 4, "question": "O'zgaruvchi nomini to'g'ri e'lon qilishni toping:", "options": ["my_var = 10", "1_var = 10", "my-var = 10", "var my_var = 10"], "answer": "my_var = 10"},
+        {"id": 5, "question": "Python qanday turdagi dasturlash tili?", "options": ["Yuqori darajali, interpretatsiya qilinadigan", "Quyi darajali, kompilyatsiya qilinadigan", "Mashina tili", "Faqat veb dizayn uchun"], "answer": "Yuqori darajali, interpretatsiya qilinadigan"},
+        {"id": 6, "question": "Butun sonlar qaysi ma'lumot turiga kiradi?", "options": ["int", "float", "str", "bool"], "answer": "int"},
+        {"id": 7, "question": "Haqiqiy (kasr) sonlar qaysi ma'lumot turiga kiradi?", "options": ["float", "int", "complex", "double"], "answer": "float"},
+        {"id": 8, "question": "Matnli ma'lumotlar qanday turga kiradi?", "options": ["str", "char", "text", "string"], "answer": "str"},
+        {"id": 9, "question": "Python'da 'True' (Rost) va 'False' (Yolg'on) qiymatlari qaysi turga tegishli?", "options": ["bool", "int", "logic", "binary"], "answer": "bool"},
+        {"id": 10, "question": "type() funksiyasining vazifasi nima?", "options": ["O'zgaruvchining turini aniqlash", "Ekranga chiqarish", "Matn kiritish", "Dasturni to'xtatish"], "answer": "O'zgaruvchining turini aniqlash"}
+    ],
+    "level_2": [
+        {"id": 11, "question": "Quyidagi kodning natijasi nima bo'ladi? print(5 // 2)", "options": ["2", "2.5", "3", "1"], "answer": "2"},
+        {"id": 12, "question": "Quyidagi kodning natijasi nima bo'ladi? print(5 % 2)", "options": ["1", "2.5", "2", "0"], "answer": "1"},
+        {"id": 13, "question": "Python'da darajaga ko'tarish amali qaysi belgi bilan yoziladi?", "options": ["**", "^", "//", "%%"], "answer": "**"},
+        {"id": 14, "question": "Qaysi shart operatori qiymatlar tengligini tekshiradi?", "options": ["==", "=", "===", "=>"], "answer": "=="},
+        {"id": 15, "question": "Qaysi operator 'Teng emas' ni bildiradi?", "options": ["!=", "<>", "not=", "!=="], "answer": "!="},
+        {"id": 16, "question": "Matnlarni qo'shish (konkatenatsiya) uchun qaysi belgi ishlatiladi?", "options": ["+", "&", ".", ","], "answer": "+"},
+        {"id": 17, "question": "len('Python') kodining natijasi nima?", "options": ["6", "5", "7", "Xatolik"], "answer": "6"},
+        {"id": 18, "question": "'Python'.upper() qanday natija beradi?", "options": ["'PYTHON'", "'python'", "'Python'", "Xatolik"], "answer": "'PYTHON'"},
+        {"id": 19, "question": "'PYTHON'.lower() qanday natija beradi?", "options": ["'python'", "'PYTHON'", "'Python'", "Xatolik"], "answer": "'python'"},
+        {"id": 20, "question": "Qaysi metod matnning boshidagi va oxiridagi bo'shliqlarni olib tashlaydi?", "options": ["strip()", "trim()", "clear()", "remove()"], "answer": "strip()"}
+    ],
+    "level_3": [
+        {"id": 21, "question": "Ro'yxat (List) qaysi qavslar yordamida yoziladi?", "options": ["[]", "()", "{}", "<>"], "answer": "[]"},
+        {"id": 22, "question": "Tuple (Kortej) va List o'rtasidagi asosiy farq nima?", "options": ["Tuple o'zgarmas (immutable)", "List o'zgarmas", "Tuple faqat sonlar oladi", "List tezroq ishlaydi"], "answer": "Tuple o'zgarmas (immutable)"},
+        {"id": 23, "question": "Ro'yxatning oxiriga element qo'shish uchun qaysi metod ishlatiladi?", "options": ["append()", "add()", "insert()", "push()"], "answer": "append()"},
+        {"id": 24, "question": "Ro'yxatdan oxirgi elementni o'chirib, uni qaytaruvchi metod qaysi?", "options": ["pop()", "remove()", "delete()", "clear()"], "answer": "pop()"},
+        {"id": 25, "question": "Ro'yxatning ma'lum bir indeksiga element qo'shish uchun qaysi metod ishlatiladi?", "options": ["insert()", "append()", "add()", "put()"], "answer": "insert()"},
+        {"id": 26, "question": "Set (To'plam) da bir xil elementlar necha marta bo'lishi mumkin?", "options": ["Faqat bir marta", "Ikki marta", "Istalgancha", "Umuman qo'shib bo'lmaydi"], "answer": "Faqat bir marta"},
+        {"id": 27, "question": "Quyidagi kod natijasi nima? len([10, 20, 30])", "options": ["3", "10", "30", "2"], "answer": "3"},
+        {"id": 28, "question": "my_list = [1, 2, 3] bo'lsa, my_list[1] ning qiymati nima?", "options": ["2", "1", "3", "Xatolik"], "answer": "2"},
+        {"id": 29, "question": "Ro'yxatdagi elementlarni tartiblash uchun qaysi metod ishlatiladi?", "options": ["sort()", "order()", "arrange()", "reverse()"], "answer": "sort()"},
+        {"id": 30, "question": "Tuple (Kortej) yaratish uchun qaysi qavslar ishlatiladi?", "options": ["()", "[]", "{}", "<>"], "answer": "()"}
+    ],
+    "level_4": [
+        {"id": 31, "question": "Lug'at (Dictionary) qanday qavs bilan yaratiladi?", "options": ["{}", "[]", "()", "<>"], "answer": "{}"},
+        {"id": 32, "question": "Lug'atda ma'lumotlar qanday shaklda saqlanadi?", "options": ["Kalit-Qiymat (Key-Value)", "Indeksli", "Faqat raqamli", "Tasodifiy"], "answer": "Kalit-Qiymat (Key-Value)"},
+        {"id": 33, "question": "Lug'atdan barcha kalitlarni olish uchun qaysi metod ishlatiladi?", "options": ["keys()", "values()", "items()", "get()"], "answer": "keys()"},
+        {"id": 34, "question": "Lug'atdan barcha qiymatlarni olish uchun qaysi metod ishlatiladi?", "options": ["values()", "keys()", "items()", "get()"], "answer": "values()"},
+        {"id": 35, "question": "Shart operatori boshlanishini to'g'ri ko'rsating:", "options": ["if x > 5:", "when x > 5:", "if (x > 5)", "if x > 5 then"], "answer": "if x > 5:"},
+        {"id": 36, "question": "'elif' nima uchun ishlatiladi?", "options": ["Qo'shimcha shart tekshirish uchun", "Siklni to'xtatish uchun", "Xatolikni ushlash uchun", "Hech qanday ma'noga ega emas"], "answer": "Qo'shimcha shart tekshirish uchun"},
+        {"id": 37, "question": "'else' bloki qachon ishga tushadi?", "options": ["Barcha 'if' va 'elif' shartlari False bo'lganda", "Har doim", "Dastur boshida", "Xatolik bo'lganda"], "answer": "Barcha 'if' va 'elif' shartlari False bo'lganda"},
+        {"id": 38, "question": "Mantiqiy 'VA' (AND) amali Python'da qanday yoziladi?", "options": ["and", "&&", "&", "AND"], "answer": "and"},
+        {"id": 39, "question": "Mantiqiy 'YOKI' (OR) amali Python'da qanday yoziladi?", "options": ["or", "||", "|", "OR"], "answer": "or"},
+        {"id": 40, "question": "Mantiqiy 'INKOR' (NOT) amali Python'da qanday yoziladi?", "options": ["not", "!", "~", "NOT"], "answer": "not"}
+    ],
+    "level_5": [
+        {"id": 41, "question": "Qaysi sikl operatori ma'lumotlar to'plami (masalan, ro'yxat) bo'ylab yurish uchun eng qulay?", "options": ["for", "while", "do-while", "loop"], "answer": "for"},
+        {"id": 42, "question": "Siklni muddatidan oldin to'liq to'xtatish uchun qaysi kalit so'z ishlatiladi?", "options": ["break", "stop", "exit", "continue"], "answer": "break"},
+        {"id": 43, "question": "Siklning joriy aylanishini to'xtatib, keyingisiga o'tish uchun qaysi so'z ishlatiladi?", "options": ["continue", "next", "pass", "skip"], "answer": "continue"},
+        {"id": 44, "question": "for i in range(3): print(i) qanday natija beradi?", "options": ["0 1 2", "1 2 3", "0 1 2 3", "3"], "answer": "0 1 2"},
+        {"id": 45, "question": "for i in range(1, 4): print(i) qanday natija beradi?", "options": ["1 2 3", "1 2 3 4", "0 1 2 3", "4"], "answer": "1 2 3"},
+        {"id": 46, "question": "Sikl bo'sh bo'lganda xatolik bermasligi uchun qaysi so'z yozib qo'yiladi?", "options": ["pass", "ignore", "continue", "null"], "answer": "pass"},
+        {"id": 47, "question": "while x < 5: kodi qachongacha aylanadi?", "options": ["x ning qiymati 5 dan kichik bo'lsa", "5 marta", "x 5 ga teng bo'lguncha", "x 5 dan katta bo'lsa"], "answer": "x ning qiymati 5 dan kichik bo'lsa"},
+        {"id": 48, "question": "range(2, 10, 2) qanday sonlar ketma-ketligini hosil qiladi?", "options": ["2, 4, 6, 8", "2, 3, 4, 5, 6, 7, 8, 9", "1, 3, 5, 7, 9", "2, 10"], "answer": "2, 4, 6, 8"},
+        {"id": 49, "question": "Sikl ichida yozilgan 'else' bloki qachon ishlaydi?", "options": ["Sikl to'liq (break'siz) tugaganda", "Har safar sikl aylanganda", "Sikl 'break' orqali to'xtaganda", "Xatolik bo'lganda"], "answer": "Sikl to'liq (break'siz) tugaganda"},
+        {"id": 50, "question": "Qaysi biri cheksiz siklga misol?", "options": ["while True:", "for i in range(1000):", "while False:", "for i in list:"], "answer": "while True:"}
+    ],
+    "level_6": [
+        {"id": 51, "question": "Funksiya qanday kalit so'z bilan yaratiladi?", "options": ["def", "function", "fun", "create"], "answer": "def"},
+        {"id": 52, "question": "Funksiyadan qiymat qaytarish uchun qaysi so'z ishlatiladi?", "options": ["return", "yield", "give", "back"], "answer": "return"},
+        {"id": 53, "question": "Agar funksiyada 'return' yozilmasa, u nima qaytaradi?", "options": ["None", "0", "False", "Xatolik"], "answer": "None"},
+        {"id": 54, "question": "Anonim funksiya (bir qatorli) qanday kalit so'z bilan yoziladi?", "options": ["lambda", "anon", "def", "inline"], "answer": "lambda"},
+        {"id": 55, "question": "x = lambda a: a + 10; print(x(5)) kodi nima chiqaradi?", "options": ["15", "5", "10", "Xatolik"], "answer": "15"},
+        {"id": 56, "question": "O'zgaruvchan sondagi argumentlarni qabul qilish uchun nima ishlatiladi?", "options": ["*args", "**kwargs", "var_args", "params"], "answer": "*args"},
+        {"id": 57, "question": "Lug'at ko'rinishidagi o'zgaruvchan argumentlarni qabul qilish uchun nima ishlatiladi?", "options": ["**kwargs", "*args", "dict_args", "kwargs"], "answer": "**kwargs"},
+        {"id": 58, "question": "Funksiya parametriga standart (default) qiymat qanday beriladi?", "options": ["def func(x=10):", "def func(x: 10):", "def func(10):", "def func()=10:"], "answer": "def func(x=10):"},
+        {"id": 59, "question": "Rekursiv funksiya nima?", "options": ["O'zini o'zi chaqiruvchi funksiya", "Boshqa funksiyani chaqiruvchi", "Hech narsa qaytarmaydigan", "Matnlar bilan ishlaydigan"], "answer": "O'zini o'zi chaqiruvchi funksiya"},
+        {"id": 60, "question": "Global o'zgaruvchini funksiya ichida o'zgartirish uchun qaysi so'z kerak?", "options": ["global", "local", "var", "nonlocal"], "answer": "global"}
+    ],
+    "level_7": [
+        {"id": 61, "question": "Sinf (Class) yaratish uchun qaysi so'z ishlatiladi?", "options": ["class", "object", "struct", "def"], "answer": "class"},
+        {"id": 62, "question": "Sinfning konstruktori (yaratuvchi metodi) qanday nomlanadi?", "options": ["__init__", "constructor", "__start__", "init"], "answer": "__init__"},
+        {"id": 63, "question": "Sinf metodlarining birinchi parametri odatda nima bo'ladi?", "options": ["self", "this", "obj", "me"], "answer": "self"},
+        {"id": 64, "question": "OOP dagi 'Vorislik' (Inheritance) nima?", "options": ["Bir sinf boshqa sinfning xususiyatlarini olishi", "Sinfni o'chirish", "Metodlarni yashirish", "Obyektni nusxalash"], "answer": "Bir sinf boshqa sinfning xususiyatlarini olishi"},
+        {"id": 65, "question": "Vorislangan sinf asosiy sinfning xususiyatini o'zgartirsa bu nima deyiladi?", "options": ["Polimorfizm / Overriding", "Inkapsulyatsiya", "Abstraksiya", "Xatolik"], "answer": "Polimorfizm / Overriding"},
+        {"id": 66, "question": "Ma'lumotlarni yashirish (Maxfiylik) qaysi OOP tamoyiliga kiradi?", "options": ["Inkapsulyatsiya", "Polimorfizm", "Vorislik", "Abstraksiya"], "answer": "Inkapsulyatsiya"},
+        {"id": 67, "question": "Python'da qat'iy maxfiy (private) xususiyatlar qanday boshlanadi?", "options": ["__ (Ikkita pastki chiziq)", "_ (Bitta pastki chiziq)", "private_", "hidden_"], "answer": "__ (Ikkita pastki chiziq)"},
+        {"id": 68, "question": "Asosiy sinfning __init__ metodini chaqirish uchun qaysi funksiya kerak?", "options": ["super()", "base()", "parent()", "main()"], "answer": "super()"},
+        {"id": 69, "question": "class Car: pass - ushbu kod nima qiladi?", "options": ["Bo'sh sinf yaratadi", "Xatolik beradi", "Obyekt yaratadi", "Dasturni tugatadi"], "answer": "Bo'sh sinf yaratadi"},
+        {"id": 70, "question": "Obyekt qanday yaratiladi? (MyClass nomli sinf bo'lsa)", "options": ["obj = MyClass()", "obj = new MyClass()", "obj = create MyClass()", "MyClass obj"], "answer": "obj = MyClass()"}
+    ],
+    "level_8": [
+        {"id": 71, "question": "Xatoliklarni ushlash qaysi blok bilan boshlanadi?", "options": ["try", "catch", "except", "handle"], "answer": "try"},
+        {"id": 72, "question": "'try' blokida xatolik yuz bersa, qaysi blok ishga tushadi?", "options": ["except", "catch", "else", "finally"], "answer": "except"},
+        {"id": 73, "question": "Xatolik bo'lsa ham, bo'lmasa ham har doim ishlaydigan blok qaysi?", "options": ["finally", "always", "else", "except"], "answer": "finally"},
+        {"id": 74, "question": "Sun'iy tarzda (qasddan) xatolik yuzaga keltirish uchun qaysi so'z ishlatiladi?", "options": ["raise", "throw", "error", "drop"], "answer": "raise"},
+        {"id": 75, "question": "Faylni o'qish uchun qanday usulda ochish kerak?", "options": ["'r'", "'w'", "'a'", "'x'"], "answer": "'r'"},
+        {"id": 76, "question": "Faylga yangi ma'lumotni ustidan yozib yuborish (o'chirib yozish) uchun qaysi rejim kerak?", "options": ["'w'", "'a'", "'r'", "'w+'"], "answer": "'w'"},
+        {"id": 77, "question": "Fayldagi ma'lumotning oxiriga qo'shimcha qilish uchun qaysi rejim kerak?", "options": ["'a'", "'w'", "'r'", "'add'"], "answer": "'a'"},
+        {"id": 78, "question": "Fayl ochilgandan so'ng, uni albatta yopish uchun qaysi metod ishlatiladi?", "options": ["close()", "exit()", "stop()", "finish()"], "answer": "close()"},
+        {"id": 79, "question": "Faylni o'zi avtomat yopadigan eng xavfsiz fayl ochish usuli qaysi?", "options": ["with open(...) as f:", "open(...)", "f = open(...)", "read_file(...)"], "answer": "with open(...) as f:"},
+        {"id": 80, "question": "ZeroDivisionError qachon yuz beradi?", "options": ["Sonni nolga bo'lganda", "Nolni soniga bo'lganda", "Fayl topilmaganda", "O'zgaruvchi e'lon qilinmaganda"], "answer": "Sonni nolga bo'lganda"}
+    ],
+    "level_9": [
+        {"id": 81, "question": "Boshqa fayldagi (moduldagi) kodni yuklash uchun nima ishlatiladi?", "options": ["import", "include", "require", "load"], "answer": "import"},
+        {"id": 82, "question": "Matematik funksiyalar qaysi modulda joylashgan?", "options": ["math", "calc", "numbers", "statistics"], "answer": "math"},
+        {"id": 83, "question": "Tasodifiy sonlar yaratish uchun qaysi modul kerak?", "options": ["random", "rand", "chance", "shuffle"], "answer": "random"},
+        {"id": 84, "question": "Hozirgi vaqt va sanani olish uchun qaysi moduldan foydalanamiz?", "options": ["datetime", "time", "date", "clock"], "answer": "datetime"},
+        {"id": 85, "question": "Operatsion tizim bilan ishlash (masalan, papka yaratish) moduli qaysi?", "options": ["os", "sys", "system", "file"], "answer": "os"},
+        {"id": 86, "question": "math.sqrt(16) qanday natija beradi?", "options": ["4.0", "8.0", "16.0", "2.0"], "answer": "4.0"},
+        {"id": 87, "question": "random.randint(1, 10) nima qaytaradi?", "options": ["1 dan 10 gacha tasodifiy butun son", "1 dan 9 gacha", "Faqat 10", "Faqat 1"], "answer": "1 dan 10 gacha tasodifiy butun son"},
+        {"id": 88, "question": "Dasturni butunlay to'xtatish uchun sys modulidagi qaysi funksiya ishlatiladi?", "options": ["sys.exit()", "sys.stop()", "sys.quit()", "sys.close()"], "answer": "sys.exit()"},
+        {"id": 89, "question": "JSON formatidagi ma'lumotlar bilan ishlash uchun qaysi modul kerak?", "options": ["json", "yaml", "dict", "parse"], "answer": "json"},
+        {"id": 90, "question": "Qaysi kalit so'z modulga qisqartma (alias) berish uchun ishlatiladi? (masalan import numpy ... np)", "options": ["as", "like", "to", "for"], "answer": "as"}
+    ],
+    "level_10": [
+        {"id": 91, "question": "[x*2 for x in range(3)] ning natijasi nima?", "options": ["[0, 2, 4]", "[0, 1, 2]", "[2, 4, 6]", "Xatolik"], "answer": "[0, 2, 4]"},
+        {"id": 92, "question": "Ro'yxatdagi barcha elementlarga ma'lum bir funksiyani qo'llash uchun qaysi funksiya ishlatiladi?", "options": ["map()", "filter()", "apply()", "reduce()"], "answer": "map()"},
+        {"id": 93, "question": "Shartga mos keladigan elementlarni ajratib olish uchun qaysi funksiya kerak?", "options": ["filter()", "map()", "select()", "extract()"], "answer": "filter()"},
+        {"id": 94, "question": "Katta hajmdagi ma'lumotlarni xotirani to'ldirmasdan yaratish uchun nima ishlatiladi?", "options": ["Generator (yield)", "List", "Tuple", "Set"], "answer": "Generator (yield)"},
+        {"id": 95, "question": "Decorator (Dekorator) nima uchun ishlatiladi?", "options": ["Funksiyaga uni o'zgartirmasdan qo'shimcha vazifa qo'shish uchun", "Obyektni o'chirish uchun", "Xatoliklarni ushlash uchun", "Siklni tezlashtirish uchun"], "answer": "Funksiyaga uni o'zgartirmasdan qo'shimcha vazifa qo'shish uchun"},
+        {"id": 96, "question": "Dekorator funksiya oldidan qaysi belgi qo'yiladi?", "options": ["@", "#", "$", "&"], "answer": "@"},
+        {"id": 97, "question": "List comprehension nima beradi?", "options": ["Qisqa va ixcham ro'yxat yaratish", "Siklni sekinlashtirish", "Matnni tahlil qilish", "Xatolikni tekshirish"], "answer": "Qisqa va ixcham ro'yxat yaratish"},
+        {"id": 98, "question": "a, b = b, a kodi nima qiladi?", "options": ["Ikkita o'zgaruvchining qiymatlarini o'rin almashtiradi", "Ikkalasini nolga tenglaydi", "Xatolik beradi", "Ikkalasini qo'shadi"], "answer": "Ikkita o'zgaruvchining qiymatlarini o'rin almashtiradi"},
+        {"id": 99, "question": "Muntazam ifodalar (Regular expressions) bilan ishlash moduli qaysi?", "options": ["re", "regex", "match", "pattern"], "answer": "re"},
+        {"id": 100, "question": "x = [1, 2, 3]; y = x.copy() bu qanday nusxalash?", "options": ["Sayoz (Shallow) nusxalash", "Chuqur (Deep) nusxalash", "Nusxa olinmaydi", "Siltemali (Reference)"], "answer": "Sayoz (Shallow) nusxalash"}
+    ]
+}
+
+with open('assets/tests.json', 'w', encoding='utf-8') as f:
+    json.dump(tests, f, ensure_ascii=False, indent=4)
+
+print("Tests updated successfully!")
