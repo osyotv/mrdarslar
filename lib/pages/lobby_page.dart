@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:convert';
 import 'multiplayer_page.dart';
 
@@ -22,25 +23,26 @@ class _LobbyPageState extends State<LobbyPage> {
       int userId = prefs.getInt('user_id') ?? 0;
       int level = prefs.getInt('unlocked_level') ?? 1;
 
-      final response = await http.post(
-        Uri.parse('http://188.137.251.110:8000/create_room?host_id=$userId&level=$level'),
-      );
+      final roomCode = (10000 + (DateTime.now().millisecondsSinceEpoch % 90000)).toString();
 
-      if (response.statusCode == 200) {
-        final data = json.decode(response.body);
-        if (mounted) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => MultiplayerPage(roomCode: data['room_code'], level: level),
-            ),
-          );
-        }
+      await FirebaseFirestore.instance.collection('rooms').doc(roomCode).set({
+        'host_id': userId,
+        'level': level,
+        'created_at': FieldValue.serverTimestamp(),
+      });
+
+      if (mounted) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => MultiplayerPage(roomCode: roomCode, level: level),
+          ),
+        );
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Serverga ulanib bo\'lmadi')));
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Tarmoq xatosi: $e')));
     } finally {
-      setState(() => isLoading = false);
+      if (mounted) setState(() => isLoading = false);
     }
   }
 

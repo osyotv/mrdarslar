@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:web_socket_channel/web_socket_channel.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'dart:async';
 
 class MultiplayerPage extends StatefulWidget {
   final String roomCode;
@@ -14,18 +15,20 @@ class MultiplayerPage extends StatefulWidget {
 }
 
 class _MultiplayerPageState extends State<MultiplayerPage> {
-  WebSocketChannel? _channel;
+  StreamSubscription<DocumentSnapshot>? _roomSubscription;
   List<dynamic> leaderboard = [];
   List<dynamic> questions = [];
   int currentQIndex = 0;
   int myScore = 0;
   bool isFinished = false;
+  int userId = 0;
+  String userName = "";
 
   @override
   void initState() {
     super.initState();
     _loadQuestions();
-    _connectWebSocket();
+    _connectToRoom();
   }
 
   Future<void> _loadQuestions() async {
@@ -39,28 +42,57 @@ class _MultiplayerPageState extends State<MultiplayerPage> {
     });
   }
 
-  Future<void> _connectWebSocket() async {
+  Future<void> _connectToRoom() async {
     final prefs = await SharedPreferences.getInstance();
-    int userId = prefs.getInt('user_id') ?? 0;
+    userId = prefs.getInt('user_id') ?? 0;
+    userName = prefs.getString('user_name') ?? "Foydalanuvchi";
     
-    _channel = WebSocketChannel.connect(
-      Uri.parse('ws://188.137.251.110:8000/ws/${widget.roomCode}/$userId'),
-    );
+    // Join room initially
+    await FirebaseFirestore.instance.collection('rooms').doc(widget.roomCode).set({
+      'scores': {
+        userId.toString(): {'name': userName, 'score': 0}
+      }
+    }, SetOptions(merge: true));
 
-    _channel!.stream.listen((message) {
-      final data = json.decode(message);
-      if (data['type'] == 'leaderboard') {
-        setState(() {
-          leaderboard = data['data'];
-        });
+    // Listen to changes
+    _roomSubscription = FirebaseFirestore.instance
+        .collection('rooms')
+        .doc(widget.roomCode)
+        .snapshots()
+        .listen((snapshot) {
+      if (snapshot.exists && snapshot.data() != null) {
+        final data = snapshot.data()!;
+        if (data.containsKey('scores')) {
+          Map<String, dynamic> scores = data['scores'];
+          List<dynamic> sortedLeaderboard = [];
+          scores.forEach((key, value) {
+            sortedLeaderboard.add({
+              'user_id': key,
+              'name': value['name'],
+              'score': value['score']
+            });
+          });
+          sortedLeaderboard.sort((a, b) => b['score'].compareTo(a['score']));
+          
+          if (mounted) {
+            setState(() {
+              leaderboard = sortedLeaderboard;
+            });
+          }
+        }
       }
     });
   }
 
-  void _checkAnswer(String selected) {
+  Future<void> _checkAnswer(String selected) async {
     if (questions[currentQIndex]['answer'] == selected) {
       myScore += 10;
-      _channel?.sink.add(json.encode({'type': 'score_update', 'points': 10}));
+      // Update score in firestore
+      await FirebaseFirestore.instance.collection('rooms').doc(widget.roomCode).set({
+        'scores': {
+          userId.toString(): {'name': userName, 'score': myScore}
+        }
+      }, SetOptions(merge: true));
     }
 
     if (currentQIndex < questions.length - 1) {
@@ -76,7 +108,7 @@ class _MultiplayerPageState extends State<MultiplayerPage> {
 
   @override
   void dispose() {
-    _channel?.sink.close();
+    _roomSubscription?.cancel();
     super.dispose();
   }
 
@@ -118,7 +150,7 @@ class _MultiplayerPageState extends State<MultiplayerPage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             if (isFirst) const Text("👑", style: TextStyle(fontSize: 20)),
-                            Text(player['name'], style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16), textAlign: TextAlign.center, maxLines: 1),
+                            Text(player['name'] ?? "User", style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16), textAlign: TextAlign.center, maxLines: 1),
                             Text("${player['score']} ball", style: const TextStyle(color: Colors.greenAccent)),
                           ],
                         ),

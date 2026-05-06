@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class TestPage extends StatefulWidget {
   final int level;
@@ -75,20 +76,15 @@ class _TestPageState extends State<TestPage> {
       await prefs.setInt('unlocked_level', newUnlocked);
     }
 
-    // Serverga yuborish
+    // Serverga yuborish (Firebase Firestore)
     if (userId > 0) {
       try {
-        await http.post(
-          Uri.parse('http://188.137.251.110:8000/update_progress'),
-          headers: {'Content-Type': 'application/json'},
-          body: json.encode({
-            'user_id': userId,
-            'score_increment': correctAnswers,
-            'new_unlocked_level': newUnlocked,
-          }),
-        );
+        await FirebaseFirestore.instance.collection('users').doc(userId.toString()).set({
+          'total_score': FieldValue.increment(correctAnswers),
+          'unlocked_level': newUnlocked,
+        }, SetOptions(merge: true));
       } catch (e) {
-        // Ignor qilamiz, offline bo'lsa server ishlamaydi.
+        // Ignor qilamiz, offline bo'lsa Firebase o'zi keshda saqlaydi va internet paydo bo'lganda yuboradi.
       }
     }
   }

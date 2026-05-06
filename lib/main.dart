@@ -10,8 +10,11 @@ import 'pages/payment_page.dart';
 import 'pages/leaderboard_page.dart';
 import 'pages/main_wrapper.dart';
 
+import 'package:firebase_core/firebase_core.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   final prefs = await SharedPreferences.getInstance();
   final hasUser = prefs.getInt('user_id') != null;
   runApp(MRDarslariApp(hasUser: hasUser));

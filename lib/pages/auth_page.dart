@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-
+import 'package:cloud_firestore/cloud_firestore.dart';
 class AuthPage extends StatefulWidget {
   const AuthPage({super.key});
 
@@ -23,28 +23,27 @@ class _AuthPageState extends State<AuthPage> {
     setState(() => isLoading = true);
 
     try {
-      final response = await http.post(
-        Uri.parse('http://188.137.251.110:8000/register'),
-        headers: {'Content-Type': 'application/json'},
-        body: json.encode({
-          'first_name': firstName,
-          'last_name': lastName,
-          'phone': phone,
-        }),
-      );
+      final int userId = DateTime.now().millisecondsSinceEpoch % 100000; // Unique enough integer ID
+      
+      await FirebaseFirestore.instance.collection('users').doc(userId.toString()).set({
+        'id': userId,
+        'first_name': firstName,
+        'last_name': lastName,
+        'phone': phone,
+        'total_score': 0,
+        'unlocked_level': 1,
+        'created_at': FieldValue.serverTimestamp(),
+      });
 
-      if (response.statusCode == 200) {
-        final data = json.decode(response.body);
-        final prefs = await SharedPreferences.getInstance();
-        await prefs.setInt('user_id', data['user_id']);
-        await prefs.setString('user_name', "$firstName $lastName");
-        
-        if (mounted) Navigator.pushReplacementNamed(context, '/home');
-      }
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setInt('user_id', userId);
+      await prefs.setString('user_name', "$firstName $lastName");
+      
+      if (mounted) Navigator.pushReplacementNamed(context, '/home');
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Tarmoq xatosi: Server yoniqmi?')));
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Tarmoq xatosi: $e')));
     } finally {
-      setState(() => isLoading = false);
+      if (mounted) setState(() => isLoading = false);
     }
   }
 

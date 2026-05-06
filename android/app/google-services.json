@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "287275020281",
+    "project_id": "muhammadzokir-4e975",
+    "storage_bucket": "muhammadzokir-4e975.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287275020281:android:32738bcd937b68b5281728",
+        "android_client_info": {
+          "package_name": "com.example.python_master"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4jbt4IBkiX6BdcESHx1C_6TNIP_pMX50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
